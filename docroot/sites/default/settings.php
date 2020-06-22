@@ -789,24 +789,17 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-// $databases['default']['default'] = array (
-//   'database' => 'petstore_local',
-//   'username' => 'drupal',
-//   'password' => 'drupal',
-//   'prefix' => '',
-//   'host' => 'localhost',
-//   'port' => '3306',
-//   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-//   'driver' => 'mysql',
-// );
 // $settings['config_sync_directory'] = 'sites/default/files/config_ey0wwrKvhXO4AoHfYyNX5rji8EGJRJLgOluZ8CXzZBisHqwCeLF4dzSYwb4xKvlXsuStpnYIaA/sync';
 $settings['config_sync_directory'] = '../config/sync';
 
 // if (file_exists('../config/sync/settings.local.php')) {
 //   include '../config/sync//settings.local.php';
 // }
-
-if (file_exists('sites/settings.local.php')) {
-  include 'sites/settings.local.php';
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
 }
+
+// if (file_exists('sites/settings.local.php')) {
+//   include 'sites/settings.local.php';
+// }
 
