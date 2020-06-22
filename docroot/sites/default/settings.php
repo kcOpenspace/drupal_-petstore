@@ -799,8 +799,14 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 //   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
 //   'driver' => 'mysql',
 // );
-$settings['config_sync_directory'] = 'sites/default/files/config_ey0wwrKvhXO4AoHfYyNX5rji8EGJRJLgOluZ8CXzZBisHqwCeLF4dzSYwb4xKvlXsuStpnYIaA/sync';
+// $settings['config_sync_directory'] = 'sites/default/files/config_ey0wwrKvhXO4AoHfYyNX5rji8EGJRJLgOluZ8CXzZBisHqwCeLF4dzSYwb4xKvlXsuStpnYIaA/sync';
+$settings['config_sync_directory'] = '../config/sync';
 
-if (file_exists('../config/sync/settings.local.php')) {
-  include '../config/sync//settings.local.php';
+// if (file_exists('../config/sync/settings.local.php')) {
+//   include '../config/sync//settings.local.php';
+// }
+
+if (file_exists('sites/settings.local.php')) {
+  include 'sites/settings.local.php';
 }
+
