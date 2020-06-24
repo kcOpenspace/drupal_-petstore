@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Contains theme level customizations for the petstore_ theme
+ */
+
+/**
+ * Implements hook_js_alter().
+ */
+function petstore__js_alter(&$javascript, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
+
+} // END petstore__js_alter
+
+/**
+ * Implements hook_css_alter().
+ */
+function petstore__css_alter(&$css, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
+  
+} // END petstore__css_alter 
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function petstore__page_attachments_alter (&$attachments) {
+  
+} // END petstore__page_attachments_alter
+
+/**
+ * Implements hook_preprocess().
+ */
+function petstore__preprocess(&$variables, $hook) {
+  
+} // END petstore__preprocess
+
+/**
+ * Implements hook_preprocess_HOOK() for html templates.
+ */
+function petstore__preprocess_html(&$variables) {
+  
+} // END petstore__preprocess_html
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function petstore__preprocess_page(&$variables) {
+  
+} // END petstore__preprocess_page
+
+/**
+ * Implements hook_preprocess_HOOK() for region templates.
+ */
+function petstore__preprocess_region(&$variables) {
+  
+} // END petstore__preprocess_region
+
+/**
+ * Implements hook_preprocess_HOOK() for node templates.
+ */
+function petstore__preprocess_node(&$variables) {
+  
+} // END petstore__preprocess_node
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function petstore__preprocess_block(&$variables) {
+  
+} // END petstore__preprocess_block
+
+/**
+ * Implements hook_preprocess_HOOK() for field templates.
+ */
+function petstore__preprocess_field(&$vars) {
+  
+} // END petstore__preprocess_field
+
+/**
+ * Implements hook_html_head_alter()
+ */
+function petstore__html_head_alter(&$head_elements) {
+  
+} // END petstore__html_head_alter
