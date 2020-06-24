@@ -1,0 +1,29 @@
+{
+  "name": "dgkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "build:report": "webpack --mode production --report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@doghouse/uikit": "^2.0.2"
+  },
+  "devDependencies": {
+    "@doghouse/webpack-base": "^1.0.3"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "IE 11",
+    "iOS >= 8"
+  ],
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  }
+}
