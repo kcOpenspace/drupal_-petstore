@@ -18,8 +18,8 @@
 /docroot/sites/simpletest
 # Ignore custom theme's generated CSS files.
 /docroot/themes/custom/*/styles/css/
-/docroot/themes/petstore_/styles/css/
-/docroot/themes/petstore_/js/
+/docroot/themes/**/styles/css/
+/docroot/themes/**/js/
 # Ignore Sass cache globally.
 .sass-cache/
 # Ignore libraries included with composer.
