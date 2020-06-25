@@ -1,0 +1,14 @@
+uuid: ac145b36-2f10-4bc3-ba7e-6b5e409fc28b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - admin@pet-project.petstore.pet-project.local
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
