@@ -20,7 +20,6 @@
 /docroot/themes/custom/*/styles/css/
 /docroot/themes/*/style/css/
 /docroot/themes/*/js/
-/docroot/themes/*/src/
 # Ignore Sass cache globally.
 .sass-cache/
 # Ignore libraries included with composer.
