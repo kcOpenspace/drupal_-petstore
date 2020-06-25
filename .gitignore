@@ -19,8 +19,9 @@ config/
 /docroot/sites/simpletest
 # Ignore custom theme's generated CSS files.
 /docroot/themes/custom/*/styles/css/
-/docroot/themes/**/styles/css/
+/docroot/themes/**/style/css/
 /docroot/themes/**/js/
+/docroot/themes/**/src/
 # Ignore Sass cache globally.
 .sass-cache/
 # Ignore libraries included with composer.
