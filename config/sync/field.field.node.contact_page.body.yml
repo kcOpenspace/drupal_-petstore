@@ -1,0 +1,23 @@
+uuid: cd505f56-43f4-4d05-b4f6-44208b3a7427
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contact_page
+  module:
+    - text
+id: node.contact_page.body
+field_name: body
+entity_type: node
+bundle: contact_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

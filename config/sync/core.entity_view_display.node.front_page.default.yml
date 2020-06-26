@@ -1,0 +1,28 @@
+uuid: bd0fbab2-b1b0-4d30-8d3f-4ce0370e61f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front_page.body
+    - node.type.front_page
+  module:
+    - text
+    - user
+id: node.front_page.default
+targetEntityType: node
+bundle: front_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -42,8 +42,8 @@ taxonomy_tags_layout: primary
 edit_this_layout: primary
 _core:
   default_config_hash: _C0ah6CoPzd9OT2XyNw7hYnCmgZSLTgi8bnxz0lOVOA
-compile_scss: 1
-show_compile_warning: 1
+compile_scss: 0
+show_compile_warning: 0
 enable_omega_badge: 1
 styles:
   petstore_/petstore_: 1

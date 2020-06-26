@@ -1,0 +1,19 @@
+uuid: 0a07c3d0-c080-468b-9eb2-5c1d8f4ea6ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: 'Front Page'
+type: front_page
+description: 'Create front page designs using this type.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

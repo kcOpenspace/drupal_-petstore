@@ -1,0 +1,28 @@
+uuid: dcecc867-36eb-4846-a8db-e983d18b26b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_page.body
+    - node.type.contact_page
+  module:
+    - text
+    - user
+id: node.contact_page.default
+targetEntityType: node
+bundle: contact_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

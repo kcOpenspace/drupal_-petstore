@@ -1,0 +1,28 @@
+uuid: eb983f2d-fa8a-484f-bfb5-d01087b16257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pet_blog.body
+    - node.type.pet_blog
+  module:
+    - text
+    - user
+id: node.pet_blog.default
+targetEntityType: node
+bundle: pet_blog
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
