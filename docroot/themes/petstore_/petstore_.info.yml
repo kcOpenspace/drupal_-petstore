@@ -2,7 +2,7 @@ name: petstore1
 type: theme
 description: 'Custom theme for petstore. Sub of Omega 5'
 package: Core
-'base theme': omega_simple_starterkit
+base theme: omega_simple_starterkit
 force_export: false
 inherit_layout: false
 scss_support: false

@@ -1,0 +1,23 @@
+uuid: cdcd8d86-4c15-4315-aca1-e4d277cae2a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pet_blog
+  module:
+    - text
+id: node.pet_blog.body
+field_name: body
+entity_type: node
+bundle: pet_blog
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

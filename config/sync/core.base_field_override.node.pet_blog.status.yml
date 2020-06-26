@@ -1,0 +1,22 @@
+uuid: 53b54439-9f80-4dbb-aba3-b0224cf10750
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pet_blog
+id: node.pet_blog.status
+field_name: status
+entity_type: node
+bundle: pet_blog
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
