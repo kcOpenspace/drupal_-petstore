@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.friends_blog_api.feeds_item
     - field.field.node.friends_blog_api.field_blog_body
     - field.field.node.friends_blog_api.field_blogid
     - node.type.friends_blog_api
@@ -22,6 +21,5 @@ content:
     type: basic_string
     region: content
 hidden:
-  feeds_item: true
   field_blogid: true
   links: true

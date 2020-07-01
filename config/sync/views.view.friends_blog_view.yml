@@ -1,18 +1,21 @@
-uuid: 0ead37c6-31dd-489a-8123-f59735b11a85
+uuid: f3c804cf-bcd3-4a7f-9abd-33c050db8bd6
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
+    - node.type.friends_blog_api
     - system.menu.main
   module:
-    - block_content
+    - node
+    - user
 id: friends_blog_view
 label: 'Friends Blog view'
 module: views
 description: ''
 tag: ''
-base_table: block_content_field_data
-base_field: id
+base_table: node_field_data
+base_field: nid
 display:
   default:
     display_plugin: default
@@ -21,8 +24,9 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -45,54 +49,55 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: mini
         options:
           items_per_page: 10
           offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       style:
-        type: grid
+        type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          view_mode: teaser
       fields:
-        info:
-          table: block_content_field_data
-          field: info
-          id: info
-          entity_type: null
-          entity_field: info
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_type: node
+          entity_field: title
+          label: ''
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
           plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
           exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -102,12 +107,9 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -119,31 +121,34 @@ display:
           separator: ', '
           field_api_classes: false
       filters:
-        status:
-          value: '1'
-          table: block_content_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: block_content
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        reusable:
-          id: reusable
-          plugin_id: boolean
-          table: block_content_field_data
-          field: reusable
-          value: '1'
-          entity_type: block_content
-          entity_field: reusable
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            friends_blog_api: friends_blog_api
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
           expose:
             operator_limit_selection: false
             operator_list: {  }
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
       title: 'Friends Blog view'
       header: {  }
       footer: {  }
@@ -156,6 +161,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
       tags: {  }
   page_1:
     display_plugin: page
@@ -167,8 +175,8 @@ display:
       path: friends-blog
       menu:
         type: normal
-        title: Blog
-        description: ''
+        title: 'Pet Friends Blogs'
+        description: 'Our friends blogs'
         expanded: false
         parent: ''
         weight: 0
@@ -179,4 +187,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
       tags: {  }

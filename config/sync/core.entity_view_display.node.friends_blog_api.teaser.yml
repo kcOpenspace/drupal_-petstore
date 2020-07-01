@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.friends_blog_api.feeds_item
     - field.field.node.friends_blog_api.field_blog_body
     - field.field.node.friends_blog_api.field_blogid
     - node.type.friends_blog_api
@@ -15,12 +14,17 @@ targetEntityType: node
 bundle: friends_blog_api
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_blog_body:
+    type: basic_string
+    weight: 0
+    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+  links:
+    weight: 1
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  feeds_item: true
-  field_blog_body: true
   field_blogid: true
