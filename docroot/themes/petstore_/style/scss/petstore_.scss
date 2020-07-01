@@ -1,5 +1,9 @@
 // // Default Variable Import
-// @import "omega-style-vars", "omega-default-style-vars";
+@import "omega-style-vars", "omega-default-style-vars";
 
 // /* SAMPLE SCSS FILE CONTENTS */
 @import "layout/primary-layout.scss", "elements/html-elements.scss";
+
+@import "elements/main-menus.scss","elements/site-branding.scss","elements/pagers.scss";
+
+@import "grids/omegags";

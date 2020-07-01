@@ -31,10 +31,10 @@ version: 8.x-5.x
 core: 8.x
 project: omega
 datestamp: 1469485442
-libraries-override:
-  petstore_/style/scss:
-    css:
-      style/css/main.css
+# libraries-override:
+#   petstore_/style/scss:
+#     css:
+#       style/css/main.css
 # libraries-override:
 #   omega/omega_html_elements:
 #     css:
