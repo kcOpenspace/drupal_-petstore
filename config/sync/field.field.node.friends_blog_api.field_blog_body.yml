@@ -1,0 +1,19 @@
+uuid: 48740be3-eb63-4e0f-934a-d7101a50030f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_body
+    - node.type.friends_blog_api
+id: node.friends_blog_api.field_blog_body
+field_name: field_blog_body
+entity_type: node
+bundle: friends_blog_api
+label: 'Blog Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

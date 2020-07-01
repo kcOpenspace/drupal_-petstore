@@ -4,42 +4,21 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.pet_blog.body
-    - field.field.node.pet_blog.field_feature_image
-    - field.field.node.pet_blog.field_tags
-    - field.field.node.pet_blog.field_teaser
-    - image.style.thumbnail
+    - field.field.node.pet_blog.field_blogbody
+    - field.field.node.pet_blog.field_id
     - node.type.pet_blog
   module:
-    - image
-    - text
     - user
 id: node.pet_blog.teaser
 targetEntityType: node
 bundle: pet_blog
 mode: teaser
 content:
-  field_feature_image:
-    type: image
-    weight: 0
-    region: content
-    label: hidden
-    settings:
-      image_style: thumbnail
-      image_link: ''
-    third_party_settings: {  }
-  field_teaser:
-    type: text_default
-    weight: 1
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   links:
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
-  field_tags: true
+  field_blogbody: true
+  field_id: true

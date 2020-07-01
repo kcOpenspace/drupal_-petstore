@@ -1,0 +1,20 @@
+uuid: c03a739c-8bb6-465d-bda1-7609b54f17c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+    - feeds
+id: aggregator_item.feeds_item
+field_name: feeds_item
+entity_type: aggregator_item
+type: feeds_item
+settings:
+  target_type: feeds_feed
+module: feeds
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

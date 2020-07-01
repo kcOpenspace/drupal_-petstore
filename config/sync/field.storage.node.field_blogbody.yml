@@ -1,16 +1,16 @@
-uuid: dab177dd-89ef-4c70-80c3-cbba5869874c
+uuid: ce9fba9d-f5c6-4820-9ce4-84099b417c8c
 langcode: en
 status: true
 dependencies:
   module:
-    - link
     - node
-id: node.field_blog_api
-field_name: field_blog_api
+id: node.field_blogbody
+field_name: field_blogbody
 entity_type: node
-type: link
-settings: {  }
-module: link
+type: string_long
+settings:
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

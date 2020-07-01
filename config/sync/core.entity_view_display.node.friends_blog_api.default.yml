@@ -3,27 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.friends_blog_api.field_blog_api
+    - field.field.node.friends_blog_api.feeds_item
+    - field.field.node.friends_blog_api.field_blog_body
+    - field.field.node.friends_blog_api.field_blogid
     - node.type.friends_blog_api
   module:
-    - link
     - user
 id: node.friends_blog_api.default
 targetEntityType: node
 bundle: friends_blog_api
 mode: default
 content:
-  field_blog_api:
+  field_blog_body:
     weight: 0
     label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+    settings: {  }
     third_party_settings: {  }
-    type: link
+    type: basic_string
     region: content
 hidden:
+  feeds_item: true
+  field_blogid: true
   links: true
