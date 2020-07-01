@@ -1,0 +1,10 @@
+uuid: c9f518fd-fb48-475b-aba1-39673f96fffe
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.gridmode
+label: GridMode
+targetEntityType: block_content
+cache: true

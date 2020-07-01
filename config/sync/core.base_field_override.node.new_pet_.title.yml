@@ -1,0 +1,18 @@
+uuid: 71e98340-fe0c-4c1b-81e2-f0c8fb33a982
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.new_pet_
+id: node.new_pet_.title
+field_name: title
+entity_type: node
+bundle: new_pet_
+label: 'Pet Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

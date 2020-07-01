@@ -5,8 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.pet_blog.body
+    - field.field.node.pet_blog.field_feature_image
+    - field.field.node.pet_blog.field_tags
+    - field.field.node.pet_blog.field_teaser
+    - image.style.thumbnail
     - node.type.pet_blog
   module:
+    - image
     - text
     - user
 id: node.pet_blog.teaser
@@ -14,17 +19,27 @@ targetEntityType: node
 bundle: pet_blog
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
+  field_feature_image:
+    type: image
     weight: 0
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
     region: content
-  links:
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: text_default
     weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true
+  field_tags: true

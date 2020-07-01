@@ -1,0 +1,31 @@
+uuid: 985be030-8d20-4645-9b49-7799824544df
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.json_api_block
+    - field.field.block_content.json_api_block.field_apilink
+  module:
+    - link
+id: block_content.json_api_block.default
+targetEntityType: block_content
+bundle: json_api_block
+mode: default
+content:
+  field_apilink:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

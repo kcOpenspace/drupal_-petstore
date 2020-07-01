@@ -1,6 +1,6 @@
 uuid: 4505dc07-18a9-4a9a-9fe3-e7b8b6739025
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -13,7 +13,7 @@ _core:
 id: petstore__tools
 theme: petstore_
 region: sidebar_first
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

@@ -1,0 +1,8 @@
+uuid: d14930df-ebbc-4407-928b-6f7d37ac0533
+langcode: en
+status: true
+dependencies: {  }
+id: json_api_block
+label: 'json api block'
+revision: 0
+description: ''

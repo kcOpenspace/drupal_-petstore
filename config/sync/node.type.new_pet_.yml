@@ -1,0 +1,17 @@
+uuid: e46d4198-d204-4e4a-84c3-49846c2cf278
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'New Pet'
+type: new_pet_
+description: 'Enter a new Pet into the system. Include name and description.'
+help: 'Enter a new Pet into the system. Include name and description and image'
+new_revision: true
+preview_mode: 0
+display_submitted: false

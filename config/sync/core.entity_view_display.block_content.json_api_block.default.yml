@@ -1,0 +1,27 @@
+uuid: 26a57da8-27b3-4d91-ab04-cf89e57b177f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.json_api_block
+    - field.field.block_content.json_api_block.field_apilink
+  module:
+    - link
+id: block_content.json_api_block.default
+targetEntityType: block_content
+bundle: json_api_block
+mode: default
+content:
+  field_apilink:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

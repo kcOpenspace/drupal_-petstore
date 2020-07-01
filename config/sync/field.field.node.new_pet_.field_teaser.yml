@@ -1,0 +1,21 @@
+uuid: 46238713-a6ce-43d7-add7-656de4709189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.new_pet_
+  module:
+    - text
+id: node.new_pet_.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: new_pet_
+label: Teaser
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

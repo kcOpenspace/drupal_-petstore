@@ -1,0 +1,22 @@
+uuid: a587a9ae-15e3-4d6d-bda3-4dac0902af54
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.friends_blog_api
+id: node.friends_blog_api.promote
+field_name: promote
+entity_type: node
+bundle: friends_blog_api
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

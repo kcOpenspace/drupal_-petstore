@@ -1,0 +1,21 @@
+uuid: 57296ccf-00ae-4e69-96e7-150da94ee1aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pet_isgreat
+    - node.type.new_pet_
+  module:
+    - text
+id: node.new_pet_.field_pet_isgreat
+field_name: field_pet_isgreat
+entity_type: node
+bundle: new_pet_
+label: 'This pet is great for people who...'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

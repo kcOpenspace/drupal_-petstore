@@ -1,0 +1,22 @@
+uuid: 628c8cda-ad2d-4e62-833c-4b6d965ac939
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.friends_blog_api.field_blog_api
+    - node.type.friends_blog_api
+  module:
+    - user
+id: node.friends_blog_api.teaser
+targetEntityType: node
+bundle: friends_blog_api
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_blog_api: true

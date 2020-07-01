@@ -9,7 +9,7 @@ _core:
 id: petstore__local_tasks
 theme: petstore_
 region: content
-weight: -40
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

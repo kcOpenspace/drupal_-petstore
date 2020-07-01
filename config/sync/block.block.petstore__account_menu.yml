@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
 id: petstore__account_menu
 theme: petstore_
-region: header
-weight: 0
+region: highlighted
+weight: -8
 provider: null
 plugin: 'system_menu_block:account'
 settings:

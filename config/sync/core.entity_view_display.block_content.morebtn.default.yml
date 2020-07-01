@@ -1,0 +1,22 @@
+uuid: 211db18c-4496-4ff5-ae4c-3046f0cf21c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.morebtn
+    - field.field.block_content.morebtn.body
+  module:
+    - text
+id: block_content.morebtn.default
+targetEntityType: block_content
+bundle: morebtn
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

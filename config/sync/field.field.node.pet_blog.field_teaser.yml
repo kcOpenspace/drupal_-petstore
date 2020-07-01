@@ -1,0 +1,21 @@
+uuid: 041e3531-8b10-4b66-b362-41b13b0184db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.pet_blog
+  module:
+    - text
+id: node.pet_blog.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: pet_blog
+label: Teaser
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

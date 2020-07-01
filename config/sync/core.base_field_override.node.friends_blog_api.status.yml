@@ -1,0 +1,22 @@
+uuid: 57646b65-d34f-43e8-a081-b7afe777b3b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.friends_blog_api
+id: node.friends_blog_api.status
+field_name: status
+entity_type: node
+bundle: friends_blog_api
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

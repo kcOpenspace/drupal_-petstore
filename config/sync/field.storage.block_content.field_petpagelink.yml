@@ -1,0 +1,19 @@
+uuid: 6531564d-bcee-40f2-8a5a-8d0496d2bce7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_petpagelink
+field_name: field_petpagelink
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

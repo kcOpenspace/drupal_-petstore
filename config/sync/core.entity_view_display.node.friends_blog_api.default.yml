@@ -1,0 +1,29 @@
+uuid: 7c09ee15-08d0-47c6-9b4b-38b36914f8cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.friends_blog_api.field_blog_api
+    - node.type.friends_blog_api
+  module:
+    - link
+    - user
+id: node.friends_blog_api.default
+targetEntityType: node
+bundle: friends_blog_api
+mode: default
+content:
+  field_blog_api:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  links: true

@@ -1,16 +1,16 @@
-uuid: cd505f56-43f4-4d05-b4f6-44208b3a7427
+uuid: 002ec8d5-c446-4016-be75-1b949ea24be9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - node.type.contact_page
+    - block_content.type.morebtn
+    - field.storage.block_content.body
   module:
     - text
-id: node.contact_page.body
+id: block_content.morebtn.body
 field_name: body
-entity_type: node
-bundle: contact_page
+entity_type: block_content
+bundle: morebtn
 label: Body
 description: ''
 required: false
@@ -18,6 +18,6 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: true
+  display_summary: false
   required_summary: false
 field_type: text_with_summary
