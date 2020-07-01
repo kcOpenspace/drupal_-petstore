@@ -1,7 +1,0 @@
-blogapi_controller.blog_list:
-  path: '/blogs'
-  defaults:
-    _controller: '\Drupal\blogapi_controller\Controller\BlogController::fetchApi'
-    _title: 'Our Friends Blog List'
-  requirements:
-    _permission: 'access content'

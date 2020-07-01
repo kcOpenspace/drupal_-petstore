@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "328ddb6b043dc6f5943b3ce7ddc0fbf5",
+    "content-hash": "566edaf35903d213a3089c68275f53d5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2777,121 +2777,6 @@
             "homepage": "https://www.drupal.org/project/omega",
             "support": {
                 "source": "https://git.drupalcode.org/project/omega"
-            }
-        },
-        {
-            "name": "drupal/openapi",
-            "version": "2.0.0-rc3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/openapi.git",
-                "reference": "8.x-2.0-rc3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/openapi-8.x-2.0-rc3.zip",
-                "reference": "8.x-2.0-rc3",
-                "shasum": "146d53e8cc4f732fe27aaf702852813f91629349"
-            },
-            "require": {
-                "drupal/core": "^8.7.0 || ^9"
-            },
-            "require-dev": {
-                "vijaycs85/drupal-quality-checker": "^1.2"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.0-rc3",
-                    "datestamp": "1587845666",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "e0ipso",
-                    "homepage": "https://www.drupal.org/user/550110"
-                },
-                {
-                    "name": "mrjmd",
-                    "homepage": "https://www.drupal.org/user/1800446"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
-                },
-                {
-                    "name": "richgerdes",
-                    "homepage": "https://www.drupal.org/user/3437973"
-                },
-                {
-                    "name": "rogierbom",
-                    "homepage": "https://www.drupal.org/user/1352176"
-                },
-                {
-                    "name": "tedbow",
-                    "homepage": "https://www.drupal.org/user/240860"
-                }
-            ],
-            "description": "Creates OpenAPI specification for Drupal resources.",
-            "homepage": "https://www.drupal.org/project/openapi",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/openapi",
-                "issues": "http://drupal.org/project/issues/openapi"
-            }
-        },
-        {
-            "name": "drupal/openapi_ui",
-            "version": "1.0.0-rc2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/openapi_ui.git",
-                "reference": "8.x-1.0-rc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/openapi_ui-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "0db4b1a876636bd3ab26b141230f9e4e3f0ca514"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-rc2",
-                    "datestamp": "1560864485",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "richgerdes",
-                    "homepage": "https://www.drupal.org/user/3437973"
-                }
-            ],
-            "description": "Provides plugin system for OpenAPI/Swagger Interface libraries.",
-            "homepage": "https://www.drupal.org/project/openapi_ui",
-            "support": {
-                "source": "https://git.drupalcode.org/project/openapi_ui"
             }
         },
         {
@@ -7379,9 +7264,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/feeds_ex": 15,
-        "drupal/openapi": 5,
-        "drupal/openapi_ui": 5
+        "drupal/feeds_ex": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
