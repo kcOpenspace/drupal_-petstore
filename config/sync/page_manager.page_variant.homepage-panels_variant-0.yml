@@ -1,0 +1,54 @@
+uuid: ed88cc6d-aa7d-4d4f-abd2-86648e53899f
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.article_view
+    - views.view.gridview
+  module:
+    - panels
+    - views
+id: homepage-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    88351d42-807f-45e6-b062-44e0d75495ea:
+      id: 'views_block:gridview-front_pet_block'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 1
+      uuid: 88351d42-807f-45e6-b062-44e0d75495ea
+      context_mapping: {  }
+    c8f455c8-43d2-4cec-a5f1-6b48c43b604a:
+      id: 'views_block:article_view-block_1'
+      label: 'Latest Pet News'
+      provider: views
+      label_display: visible
+      views_label: 'Latest Pet News'
+      items_per_page: '3'
+      context_mapping: {  }
+      region: content
+      uuid: c8f455c8-43d2-4cec-a5f1-6b48c43b604a
+      weight: 2
+  id: panels_variant
+  uuid: 408a3e54-a210-4199-b76d-d407929278c5
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: ''
+  page_title: null
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: ipe
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,27 @@
+uuid: b26e6556-7f11-439e-bb4d-bacdb7427022
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.backtopets
+    - field.field.block_content.backtopets.field_petpagelink
+  module:
+    - link
+id: block_content.backtopets.default
+targetEntityType: block_content
+bundle: backtopets
+mode: default
+content:
+  field_petpagelink:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 100
+      url_only: true
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

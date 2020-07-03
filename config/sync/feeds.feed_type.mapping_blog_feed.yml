@@ -1,0 +1,88 @@
+uuid: 6ae8dfd2-fb29-4d01-b465-6e869f832a02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.friends_blog_api.field_blog_body
+    - field.field.node.friends_blog_api.field_blogid
+    - node.type.friends_blog_api
+  module:
+    - feeds_ex
+    - node
+id: mapping_blog_feed
+label: 'Mapping Blog feed'
+description: ''
+help: ''
+import_period: 86400
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: true
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.*'
+  sources:
+    title:
+      label: title
+      value: title
+    body:
+      label: body
+      value: body
+    id:
+      label: id
+      value: id
+  display_errors: false
+  source_encoding:
+    - auto
+  debug_mode: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: en
+  update_existing: 2
+  update_non_existent: _keep
+  expire: 86400
+  owner_feed_author: false
+  owner_id: 0
+  authorize: false
+  skip_hash_check: false
+  values:
+    type: friends_blog_api
+custom_sources:
+  title:
+    label: title
+    value: title
+    machine_name: title
+  body:
+    label: body
+    value: body
+    machine_name: body
+  id:
+    label: id
+    value: id
+    machine_name: id
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_blog_body
+    map:
+      value: body
+    settings:
+      language: null
+  -
+    target: field_blogid
+    map:
+      value: id
+    unique: {  }
+    settings:
+      language: null

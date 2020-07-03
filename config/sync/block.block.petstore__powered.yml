@@ -1,6 +1,6 @@
 uuid: 200fb521-6e39-4895-b53b-a6710cb123ea
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
 id: petstore__powered
 theme: petstore_
-region: header
-weight: 10
+region: highlighted
+weight: -6
 provider: null
 plugin: system_powered_by_block
 settings:

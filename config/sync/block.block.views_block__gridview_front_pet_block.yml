@@ -1,0 +1,33 @@
+uuid: 82e7500e-36e7-4a65-a775-a6bf80fd565f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.gridview
+  module:
+    - node
+    - views
+  theme:
+    - petstore_
+id: views_block__gridview_front_pet_block
+theme: petstore_
+region: footer
+weight: -7
+provider: null
+plugin: 'views_block:gridview-front_pet_block'
+settings:
+  id: 'views_block:gridview-front_pet_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      front_page: front_page
+      new_pet_: new_pet_
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

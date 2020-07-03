@@ -1,0 +1,8 @@
+uuid: 91fa2947-c968-4d33-a1ea-cc1ebfe5e955
+langcode: en
+status: true
+dependencies: {  }
+name: 'Animal Category'
+vid: pets
+description: 'pet category'
+weight: 0

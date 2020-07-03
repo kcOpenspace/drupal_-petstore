@@ -1,0 +1,17 @@
+uuid: 6b82d880-6b10-4c19-bde3-31f64b9f8ffc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Friends Blog API'
+type: friends_blog_api
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

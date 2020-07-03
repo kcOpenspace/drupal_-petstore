@@ -1,0 +1,19 @@
+uuid: bf06cb51-2c78-4afa-9bed-1edcf34231ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pet_name_for_search
+    - node.type.new_pet_
+id: node.new_pet_.field_pet_name_for_search
+field_name: field_pet_name_for_search
+entity_type: node
+bundle: new_pet_
+label: 'Pet name for search'
+description: 'Same as pet name'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

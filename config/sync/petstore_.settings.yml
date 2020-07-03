@@ -28,8 +28,8 @@ favicon:
 omega_toggle_intro: 1
 enable_backups: 0
 force_subtheme_creation: 0
-block_demo_mode: 1
-screen_demo_indicator: 1
+block_demo_mode: 0
+screen_demo_indicator: 0
 default_layout: primary
 home_layout: primary
 enable_omegags_layout: 1
@@ -44,17 +44,24 @@ _core:
   default_config_hash: _C0ah6CoPzd9OT2XyNw7hYnCmgZSLTgi8bnxz0lOVOA
 compile_scss: 0
 show_compile_warning: 0
-enable_omega_badge: 1
+enable_omega_badge: 0
 styles:
   petstore_/petstore_: 1
   omega/omega: 1
   omega/omega_html_elements: 1
-  omega/omega_branding: 0
+  omega/omega_branding: 1
   omega/omega_breadcrumbs: 0
-  omega/omega_main_menus: 0
+  omega/omega_main_menus: 1
   omega/omega_messages: 0
-  omega/omega_pagers: 0
+  omega/omega_pagers: 1
   omega/omega_tabs: 0
-  omega/omega_taxonomy_terms: 0
+  omega/omega_taxonomy_terms: 1
   omega/omega_forms: 1
   omega_simple_starterkit/omega_simple_starterkit: 0
+layout-config:
+  non_omegags_info: ''
+node_type_contact_page_layout: primary
+node_type_front_page_layout: primary
+node_type_new_pet__layout: primary
+node_type_pet_blog_layout: primary
+taxonomy_pets_layout: primary

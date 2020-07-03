@@ -1,0 +1,56 @@
+uuid: a0f3eabc-82be-4eef-8edb-ce3b46de4c0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.new_pet_.body
+    - field.field.node.new_pet_.field_animal_type
+    - field.field.node.new_pet_.field_image
+    - field.field.node.new_pet_.field_paragraphs
+    - field.field.node.new_pet_.field_pet_care_instructions
+    - field.field.node.new_pet_.field_pet_isgreat
+    - field.field.node.new_pet_.field_pet_name_for_search
+    - field.field.node.new_pet_.field_teaser
+    - image.style.petthumbnail
+    - node.type.new_pet_
+  module:
+    - image
+    - text
+    - user
+id: node.new_pet_.teaser
+targetEntityType: node
+bundle: new_pet_
+mode: teaser
+content:
+  field_animal_type:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: petthumbnail
+      image_link: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_paragraphs: true
+  field_pet_care_instructions: true
+  field_pet_isgreat: true
+  field_pet_name_for_search: true
+  links: true

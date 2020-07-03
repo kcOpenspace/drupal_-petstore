@@ -1,0 +1,29 @@
+uuid: 89f9c6ca-5c13-4987-853e-ee8d5c43266c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_animal_type
+    - node.type.new_pet_
+    - taxonomy.vocabulary.pets
+id: node.new_pet_.field_animal_type
+field_name: field_animal_type
+entity_type: node
+bundle: new_pet_
+label: 'Animal Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pets: pets
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

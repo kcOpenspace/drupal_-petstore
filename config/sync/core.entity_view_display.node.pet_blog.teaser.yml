@@ -4,27 +4,21 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.pet_blog.body
+    - field.field.node.pet_blog.field_blogbody
+    - field.field.node.pet_blog.field_id
     - node.type.pet_blog
   module:
-    - text
     - user
 id: node.pet_blog.teaser
 targetEntityType: node
 bundle: pet_blog
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 0
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_blogbody: true
+  field_id: true

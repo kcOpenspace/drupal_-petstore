@@ -1,0 +1,28 @@
+uuid: 0808f6c8-0eba-4a20-800e-7041fcb9a249
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.json_api_block
+    - field.storage.block_content.field_apilink
+  module:
+    - link
+id: block_content.json_api_block.field_apilink
+field_name: field_apilink
+entity_type: block_content
+bundle: json_api_block
+label: apilink
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://jsonplaceholder.typicode.com/posts'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

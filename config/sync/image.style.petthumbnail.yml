@@ -1,0 +1,15 @@
+uuid: 216eced0-0e0b-498f-90fb-653c0ba26c28
+langcode: en
+status: true
+dependencies: {  }
+name: petthumbnail
+label: PetThumbnail
+effects:
+  035cdb96-abd5-4324-8bf4-d2474f5c34e2:
+    uuid: 035cdb96-abd5-4324-8bf4-d2474f5c34e2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 240
+      anchor: center-center

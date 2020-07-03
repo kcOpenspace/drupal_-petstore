@@ -1,0 +1,24 @@
+uuid: b3d3fd1e-21bd-4d06-b989-6eb8b2f97e85
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.pet_blog.field_blogbody
+    - field.field.node.pet_blog.field_id
+    - node.type.pet_blog
+  module:
+    - user
+id: node.pet_blog.full
+targetEntityType: node
+bundle: pet_blog
+mode: full
+content:
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_blogbody: true
+  field_id: true

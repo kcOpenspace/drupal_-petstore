@@ -1,0 +1,23 @@
+uuid: d56297c6-3165-4159-bba6-093d59a6c978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.aggregator_item.feeds_item
+  module:
+    - aggregator
+    - feeds
+id: aggregator_item.aggregator_item.feeds_item
+field_name: feeds_item
+entity_type: aggregator_item
+bundle: aggregator_item
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item
