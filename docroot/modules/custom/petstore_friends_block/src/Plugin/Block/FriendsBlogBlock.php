@@ -34,7 +34,7 @@ class FriendsBlogBlock extends BlockBase {
               <h3 class="blog-title">ARTICLE TITLE</h3>
               <p class="blog-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet venenatis urna cursus eget nunc.</p>
             </div>
-            <a href="" class="read-more-btn"></a>
+            <a href="#" class="read-more-btn">Read More</a>
           </div>
         </div>')
     ];
