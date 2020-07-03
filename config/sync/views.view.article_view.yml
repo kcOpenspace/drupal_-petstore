@@ -207,13 +207,14 @@ display:
       path: article-page
       menu:
         type: normal
-        title: Articles
+        title: 'Pet news'
         description: 'Latest News'
         expanded: false
         parent: ''
-        weight: 0
+        weight: -48
         context: '0'
         menu_name: main
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:

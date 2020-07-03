@@ -1,0 +1,10 @@
+uuid: e3074414-ab61-480a-bead-2ec75bea7939
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.token
+label: Token
+targetEntityType: media
+cache: true

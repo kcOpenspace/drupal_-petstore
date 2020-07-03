@@ -1,0 +1,21 @@
+uuid: 8e6786f1-28b1-4d00-84f2-ea5dcef4810e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.get_in_touch
+    - field.storage.contact_message.field_enquiry_category
+  module:
+    - options
+id: contact_message.get_in_touch.field_enquiry_category
+field_name: field_enquiry_category
+entity_type: contact_message
+bundle: get_in_touch
+label: 'Enquiry Category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

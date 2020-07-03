@@ -1,0 +1,12 @@
+uuid: 6075b836-bf77-4e51-9f16-867962b0ee86
+langcode: en
+status: true
+dependencies: {  }
+id: get_in_touch
+label: 'Get in touch'
+recipients:
+  - admin@pet-project.petstore.pet-project.local
+reply: ''
+weight: 0
+message: 'Your message has been sent to our Jeremy, the dog thats smarter than a web developer. He will get back to you as soon as he''s free.'
+redirect: ''

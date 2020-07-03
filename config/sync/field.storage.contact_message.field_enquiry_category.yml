@@ -1,0 +1,33 @@
+uuid: a32454b9-f2b8-4bc3-8fcb-4daba02f3edb
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_enquiry_category
+field_name: field_enquiry_category
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Get in touch'
+      label: 'Get in touch'
+    -
+      value: Adopt
+      label: Adopt
+    -
+      value: Enquire
+      label: Enquire
+    -
+      value: 'I need urgent help...'
+      label: 'I need urgent help...'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

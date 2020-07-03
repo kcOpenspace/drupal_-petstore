@@ -29,7 +29,7 @@ omega_toggle_intro: 1
 enable_backups: 0
 force_subtheme_creation: 0
 block_demo_mode: 0
-screen_demo_indicator: 0
+screen_demo_indicator: 1
 default_layout: primary
 home_layout: primary
 enable_omegags_layout: 1
@@ -65,3 +65,4 @@ node_type_front_page_layout: primary
 node_type_new_pet__layout: primary
 node_type_pet_blog_layout: primary
 taxonomy_pets_layout: primary
+node_type_friends_blog_api_layout: primary

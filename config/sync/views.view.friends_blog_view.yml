@@ -165,10 +165,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page_1:
+  blog_page:
     display_plugin: page
-    id: page_1
-    display_title: Page
+    id: blog_page
+    display_title: 'Blog page view'
     position: 1
     display_options:
       display_extenders: {  }
@@ -179,9 +179,10 @@ display:
         description: 'Our friends blogs'
         expanded: false
         parent: ''
-        weight: 0
+        weight: -47
         context: '0'
         menu_name: main
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
