@@ -17,14 +17,8 @@ function pet_store_friends_theme($existing, $type, $theme, $path) {
     'friends-blog-list' => array (
       'variables' => array (
         'title' => array (),
-        'body' => array (
-          // 'id' => '',
-          // 'title' => '',
-          // 'body' => '',
-        )),
-      'template' => 'friends-blog-list'),
-    // 'friends-blog-block' => array (
-    //   'variables' => array ('title' => array(), 'body' => ''),
-    //   'template' => 'friends-blog-block')
+        'body' => array ()
+      ),
+      'template' => 'friends-blog-list')
     );
 }

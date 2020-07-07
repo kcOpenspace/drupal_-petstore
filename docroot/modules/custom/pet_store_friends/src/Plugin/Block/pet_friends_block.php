@@ -3,6 +3,7 @@
 namespace Drupal\pet_store_friends\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Component\Serialization\Json;
 
 /**
  * Provides an latest post friends blog block.
@@ -21,19 +22,11 @@ class Pet_Friends_Block extends BlockBase {
   public function build() {
 
     $blog= $this->get_blog_data();
-    // var_dump($blog);
-
-    $blog_post = array (
-      array ('id' => $blog->id),
-      array ('title' => $blog->title),
-      array ('body' => $blog->body)
-    );
 
     $build['content'] = [
-      '#theme' => 'friends-blog-block',
-      '#title' => 'Friends Latest Post',
-      '#body' => 'Hello body',
-      '#markup' => $this->t('Block2 It works!'),
+      '#theme' => 'friends-blog-list',
+      '#title' => 'Pet store friends',
+      '#body' => $blog,
       '#cache' => ['max-age' => 86400]
     ];
 
@@ -55,7 +48,7 @@ class Pet_Friends_Block extends BlockBase {
     
     $json_reponse = json_decode($data);
     //array pop last item. for the latest blog post
-    $latest_post = array_pop($json_reponse);
+    $latest_post = array(array_pop($json_reponse));
 
     return $latest_post;
   }
