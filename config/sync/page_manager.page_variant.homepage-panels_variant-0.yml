@@ -8,7 +8,7 @@ dependencies:
     - views.view.gridview
   module:
     - panels
-    - petstore_friends_block
+    - pet_store_friends
     - views
 id: homepage-panels_variant-0
 label: Panels
@@ -37,14 +37,14 @@ variant_settings:
       weight: 1
       context_mapping: {  }
       uuid: c8f455c8-43d2-4cec-a5f1-6b48c43b604a
-    7e3a17e9-03fb-43f6-b8f9-0e4d536e3a2f:
-      id: petstore_friends_block
-      label: 'Friends Blog post'
-      provider: petstore_friends_block
-      label_display: '0'
+    3d699b57-3cd4-4b95-829d-0f7e2de68ae6:
+      id: pet_store_friends_block
+      label: 'Latest post from my friends pet blog'
+      provider: pet_store_friends
+      label_display: visible
       region: content
-      weight: -1
-      uuid: 7e3a17e9-03fb-43f6-b8f9-0e4d536e3a2f
+      weight: 0
+      uuid: 3d699b57-3cd4-4b95-829d-0f7e2de68ae6
       context_mapping: {  }
   id: panels_variant
   uuid: 408a3e54-a210-4199-b76d-d407929278c5

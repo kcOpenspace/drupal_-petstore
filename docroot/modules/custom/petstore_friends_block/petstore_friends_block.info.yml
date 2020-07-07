@@ -1,6 +1,0 @@
-name: Petstore friends block
-type: module
-description: Block to display friends blog teaser
-package: Custom
-core: 8.x
-core_version_requirement: ^8 || ^9

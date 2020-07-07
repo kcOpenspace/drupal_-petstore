@@ -21,7 +21,6 @@
         "drupal/devel": "^4.0",
         "drupal/feeds_ex": "^1.0@alpha",
         "drupal/omega": "5.0-alpha7",
-        "drupal/openapi": "^2.0@RC",
         "drupal/page_manager": "^4.0",
         "drupal/panels": "^4.6",
         "drupal/paragraphs": "^1.12",

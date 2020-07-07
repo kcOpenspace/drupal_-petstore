@@ -1,0 +1,8 @@
+<div>
+  <h3>Latest post from my friends pet blog</h3>  
+  
+  {% for post in body %}
+  <p>{{ post.title }}</p>
+  <p>{{ post.body }}</p>
+  {% endfor %}
+</div>
