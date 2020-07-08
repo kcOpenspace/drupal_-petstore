@@ -27,7 +27,8 @@
         "drupal/pathauto": "^1.8",
         "drupal/restui": "1.18",
         "drupal/webform": "5.x",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.3",
+        "guzzlehttp/guzzle": "^6.3"
     },
     "conflict": {
         "drupal/drupal": "*"
