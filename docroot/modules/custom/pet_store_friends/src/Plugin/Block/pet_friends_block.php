@@ -4,6 +4,7 @@ namespace Drupal\pet_store_friends\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Component\Serialization\Json;
+use GuzzleHttp\Client;
 
 /**
  * Provides an latest post friends blog block.
@@ -21,7 +22,7 @@ class Pet_Friends_Block extends BlockBase {
    */
   public function build() {
 
-    $blog= $this->get_blog_data();
+    $blog= $this->getBlogData();
 
     $build['content'] = [
       '#theme' => 'friends-blog-list',
@@ -34,11 +35,11 @@ class Pet_Friends_Block extends BlockBase {
   }
 
   //Function to fetch Latest friends blog post
-  function get_blog_data(){
+  function getBlogData(){
     //Request fetch and decode json data
     $url = 'https://jsonplaceholder.typicode.com/posts';
     $method = 'GET';
-    $client = \Drupal::httpClient();
+    $client = new Client();
     $response = $client->request($method,$url);
     $code = $response->getStatusCode();
 
@@ -46,7 +47,7 @@ class Pet_Friends_Block extends BlockBase {
       $data = $response->getBody()->getContents();
     }
     
-    $json_reponse = json_decode($data);
+    $json_reponse = Json::decode($data);
     //array pop last item. for the latest blog post
     $latest_post = array(array_pop($json_reponse));
 

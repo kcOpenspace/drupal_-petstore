@@ -4,6 +4,7 @@ namespace Drupal\pet_store_friends\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Component\Serialization\Json;
+use GuzzleHttp\Client;
 
 /**
  * Returns responses for pet store friends routes.
@@ -39,7 +40,7 @@ class PetStoreFriendsController extends ControllerBase {
     //Request fetch and decode json data
     $url = 'https://jsonplaceholder.typicode.com/posts';
     $method = 'GET';
-    $client = \Drupal::httpClient();
+    $client = new Client();
     $response = $client->request($method,$url);
     $code = $response->getStatusCode();
 
