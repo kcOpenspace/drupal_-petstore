@@ -21,7 +21,7 @@ class PetStoreFriendsController extends ControllerBase {
   protected $httpClient;
 
   /**
-   * @param \Drupal\Core\Session\Client $http_client
+   * @param GuzzleHttp\Client $http_client
    */
   public function __construct(Client $http_client) {
     $this->httpClient = $http_client;
@@ -75,7 +75,7 @@ class PetStoreFriendsController extends ControllerBase {
       '#theme' => 'friends-blog-list',
       '#title' => 'Pet store friends',
       '#body' => $latest_ten_posts,
-      '#cache' => ['max-age' => 86400]
+      '#cache' => ['max-age' => 86400],
     ];
 
   }

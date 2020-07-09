@@ -17,8 +17,9 @@ function pet_store_friends_theme($existing, $type, $theme, $path) {
     'friends-blog-list' => [
       'variables' => [
         'title' => [],
-        'body' => []
+        'body' => [],
       ],
-      'template' => 'friends-blog-list']
+      'template' => 'friends-blog-list',
+      ]
   ];
 }

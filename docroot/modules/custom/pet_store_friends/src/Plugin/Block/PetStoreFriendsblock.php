@@ -25,17 +25,17 @@ class PetStoreFriendsBlock extends BlockBase implements ContainerFactoryPluginIn
    *
    * @var GuzzleHttp\Client
    */
-  protected $httpClient;
+  protected $http_client;
 
   /**
    * @param array $configuration
    * @param string $plugin_id
    * @param mixed $plugin_definition
-   * @param \Drupal\Core\Session\Client $http_client
+   * @param GuzzleHttp\Client $http_client
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, Client $http_client) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
-    $this->httpClient = $http_client;
+    $this->http_client = $http_client;
   }
 
   /**
@@ -58,7 +58,7 @@ class PetStoreFriendsBlock extends BlockBase implements ContainerFactoryPluginIn
   //Request data for blog posts through the Guzzle client
   public function getBlogPosts($url, $method) {
 
-    $response = $this->httpClient->request($method,$url);
+    $response = $this->http_client->request($method,$url);
     $code = $response->getStatusCode();
 
     if ($code === 200) {
@@ -89,7 +89,7 @@ class PetStoreFriendsBlock extends BlockBase implements ContainerFactoryPluginIn
       '#theme' => 'friends-blog-list',
       '#title' => 'Pet store friends',
       '#body' => $blog,
-      '#cache' => ['max-age' => 86400]
+      '#cache' => ['max-age' => 86400],
     ];
 
     return $build;
