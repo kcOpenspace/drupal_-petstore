@@ -20,6 +20,13 @@ function pet_store_friends_theme($existing, $type, $theme, $path) {
         'body' => [],
       ],
       'template' => 'friends-blog-list',
+    ],
+    'friends-blog-block' => [
+      'variables' => [
+        'title' => [],
+        'body' => [],
+      ],
+      'template' => 'friends-blog-block',
       ]
   ];
 }

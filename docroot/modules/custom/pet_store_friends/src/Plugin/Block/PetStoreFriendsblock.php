@@ -86,8 +86,7 @@ class PetStoreFriendsBlock extends BlockBase implements ContainerFactoryPluginIn
     $blog= $this->latestBlogPosts();
 
     $build['content'] = [
-      '#theme' => 'friends-blog-list',
-      '#title' => 'Pet store friends',
+      '#theme' => 'friends-blog-block',
       '#body' => $blog,
       '#cache' => ['max-age' => 86400],
     ];
