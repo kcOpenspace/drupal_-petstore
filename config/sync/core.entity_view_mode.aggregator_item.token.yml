@@ -1,0 +1,10 @@
+uuid: 14af55e3-b84a-402f-8d76-396abfe59c5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+id: aggregator_item.token
+label: Token
+targetEntityType: aggregator_item
+cache: true

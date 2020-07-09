@@ -1,0 +1,7 @@
+pet_store_friends.example:
+  path: '/friends-articles'
+  defaults:
+    _title: 'Latest Posts From Our Friends Pet Blog'
+    _controller: '\Drupal\pet_store_friends\Controller\PetStoreFriendsController::build'
+  requirements:
+    _permission: 'access content'

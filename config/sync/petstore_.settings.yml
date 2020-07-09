@@ -65,3 +65,4 @@ node_type_front_page_layout: primary
 node_type_new_pet__layout: primary
 node_type_pet_blog_layout: primary
 taxonomy_pets_layout: primary
+node_type_friends_blog_api_layout: primary

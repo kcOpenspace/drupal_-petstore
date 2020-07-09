@@ -18,6 +18,7 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -49,6 +50,7 @@ module:
   panels_ipe: 0
   path: 0
   path_alias: 0
+  pet_store_friends: 0
   quickedit: 0
   rdf: 0
   rest: 0
@@ -59,6 +61,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   user: 0
@@ -66,6 +69,8 @@ module:
   webform: 0
   webform_templates: 0
   webform_ui: 0
+  webprofiler: 0
+  pathauto: 1
   views: 10
   paragraphs: 11
   standard: 1000

@@ -1,0 +1,6 @@
+name: pet store friends
+type: module
+description: Latest Blog posts from pet friends
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

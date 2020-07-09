@@ -1,0 +1,40 @@
+uuid: 5da32259-ca73-48f7-9104-76016c7c74e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.get_in_touch
+    - field.field.contact_message.get_in_touch.field_enquiry_category
+id: contact_message.get_in_touch.default
+targetEntityType: contact_message
+bundle: get_in_touch
+mode: default
+content:
+  field_enquiry_category:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  mail:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  preview: true
+  subject: true

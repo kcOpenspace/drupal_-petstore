@@ -473,7 +473,7 @@ display:
         description: 'List of our pets'
         expanded: false
         parent: ''
-        weight: 0
+        weight: -49
         context: '0'
         menu_name: main
       display_description: ''

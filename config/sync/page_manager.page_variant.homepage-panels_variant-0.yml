@@ -8,6 +8,7 @@ dependencies:
     - views.view.gridview
   module:
     - panels
+    - pet_store_friends
     - views
 id: homepage-panels_variant-0
 label: Panels
@@ -22,7 +23,7 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: content
-      weight: 1
+      weight: 0
       uuid: 88351d42-807f-45e6-b062-44e0d75495ea
       context_mapping: {  }
     c8f455c8-43d2-4cec-a5f1-6b48c43b604a:
@@ -32,10 +33,19 @@ variant_settings:
       label_display: visible
       views_label: 'Latest Pet News'
       items_per_page: '3'
-      context_mapping: {  }
       region: content
+      weight: 1
+      context_mapping: {  }
       uuid: c8f455c8-43d2-4cec-a5f1-6b48c43b604a
-      weight: 2
+    3d699b57-3cd4-4b95-829d-0f7e2de68ae6:
+      id: pet_store_friends_block
+      label: 'Latest post from my friends pet blog'
+      provider: pet_store_friends
+      label_display: visible
+      region: content
+      weight: 0
+      uuid: 3d699b57-3cd4-4b95-829d-0f7e2de68ae6
+      context_mapping: {  }
   id: panels_variant
   uuid: 408a3e54-a210-4199-b76d-d407929278c5
   label: null
@@ -43,7 +53,7 @@ variant_settings:
   layout: layout_onecol
   layout_settings:
     label: ''
-  page_title: null
+  page_title: ''
   storage_type: page_manager
   storage_id: homepage-panels_variant-0
   builder: ipe

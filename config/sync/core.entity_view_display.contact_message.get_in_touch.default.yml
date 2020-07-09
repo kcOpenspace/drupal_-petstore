@@ -1,0 +1,29 @@
+uuid: ea9ffd9e-b6ce-4edf-87a8-ca443f04d9c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.get_in_touch
+    - field.field.contact_message.get_in_touch.field_enquiry_category
+  module:
+    - options
+id: contact_message.get_in_touch.default
+targetEntityType: contact_message
+bundle: get_in_touch
+mode: default
+content:
+  field_enquiry_category:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  message:
+    type: basic_string
+    weight: 1
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
