@@ -21,10 +21,7 @@ class PetStoreFriendsController extends ControllerBase {
   protected $httpClient;
 
   /**
-   * @param array $configuration
-   * @param string $plugin_id
-   * @param mixed $plugin_definition
-   * @param \Drupal\Core\Session\AccountInterface $account
+   * @param \Drupal\Core\Session\Client $http_client
    */
   public function __construct(Client $http_client) {
     $this->httpClient = $http_client;
@@ -32,10 +29,6 @@ class PetStoreFriendsController extends ControllerBase {
 
   /**
    * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
-   * @param array $configuration
-   * @param string $plugin_id
-   * @param mixed $plugin_definition
-   *
    * @return static
    */
   public static function create(ContainerInterface $container) {
@@ -45,7 +38,7 @@ class PetStoreFriendsController extends ControllerBase {
   }
 
   //Function to fetch Latest friends blog post
-  function get_blog_data(){
+  function getBlogPosts(){
     //Request fetch and decode json data
     $url = 'https://jsonplaceholder.typicode.com/posts';
     $method = 'GET';
@@ -68,10 +61,10 @@ class PetStoreFriendsController extends ControllerBase {
    */
   public function build() {
 
-    $blog_list = $this -> get_blog_data();
+    $blog_list = $this->getBlogPosts();
 
     //Get the Latest 10 posts from the array
-    $latest_ten_posts = array_splice (
+    $latest_ten_posts = array_splice(
       $blog_list, 
       count($blog_list)-10, 
       count($blog_list), 

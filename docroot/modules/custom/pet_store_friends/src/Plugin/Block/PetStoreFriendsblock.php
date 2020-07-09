@@ -7,7 +7,7 @@ use Drupal\Component\Serialization\Json;
 use GuzzleHttp\Client;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-// use Drupal\pet_store_friends\Api\BlogPostApi;
+
 /**
  * Provides an latest post friends blog block.
  *
@@ -31,7 +31,7 @@ class PetStoreFriendsBlock extends BlockBase implements ContainerFactoryPluginIn
    * @param array $configuration
    * @param string $plugin_id
    * @param mixed $plugin_definition
-   * @param \Drupal\Core\Session\AccountInterface $account
+   * @param \Drupal\Core\Session\Client $http_client
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, Client $http_client) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
@@ -63,13 +63,19 @@ class PetStoreFriendsBlock extends BlockBase implements ContainerFactoryPluginIn
 
     if ($code === 200) {
       $data = $response->getBody()->getContents();
+      $post_data = Json::decode($data);
     }
 
-    return $this->clientResponse($data);
+    return $post_data;
   }
+  
+  public function latestBlogPosts() {
+    $url = 'https://jsonplaceholder.typicode.com/posts';
+    $method = 'GET';
 
-  public function clientResponse($data) {
-    return Json::decode($data);
+    $latest_post[] = array_pop($this->getBlogPosts($url, $method));
+
+    return $latest_post;
   }
 
   /**
@@ -89,14 +95,6 @@ class PetStoreFriendsBlock extends BlockBase implements ContainerFactoryPluginIn
     return $build;
   }
 
-  public function latestBlogPosts() {
-    $url = 'https://jsonplaceholder.typicode.com/posts';
-    $method = 'GET';
-
-    $latest_post = [array_pop($this->getBlogPosts($url, $method))];
-
-    return $latest_post;
-  }
   
 
 }
