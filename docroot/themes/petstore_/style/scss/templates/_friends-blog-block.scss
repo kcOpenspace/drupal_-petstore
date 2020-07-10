@@ -1,0 +1,111 @@
+
+$font-small-h2: 1.6em;
+$font-large-h2: 2.6em;
+$font-med-h3: 1.5em;
+
+$font-small-p: 1.1em;
+
+$font-large-btn: 1.5em;
+
+.blog-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 80vh;
+  flex-wrap: wrap;
+  text-align: center;
+  .left-div {
+    & img {
+      width: 100%;
+      max-width: 768px;
+    }
+  }
+  .right-div {
+    height: 100%;
+    line-height: 1.9em;
+    .title-wrap {
+      .title-label {
+        margin: 10px 0 0;
+        color: $primary-color;
+        font-size: $font-small-h2;
+      }
+      & p {
+        color: $secondary-color;
+        font-size: $font-small-p;
+      }
+    }
+    //Latest BLog Post Contents. Small screen mobile view not display up to 375px wide.
+    .blog-wrap {
+      display: none;
+    }
+    .read-more-btn {
+      max-width: 200px;
+      display: block;
+      background-image: linear-gradient($secondary-color, $primary-color);
+      margin: 0 auto;
+      padding: 10px 30px;
+      border-radius: 20px;
+      //Btn Text styles
+      color: $standard;
+      text-decoration: none;
+      text-align: center;
+      font-size: large;
+
+      &:hover {
+        cursor: pointer;
+        background-image: linear-gradient($primary-color,$secondary-color);
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  .blog-wrapper {
+    height: 50vh;
+    max-height: 800px;
+    display: flex;
+    flex-direction: row;
+    .left-div {
+      width: 50%;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .right-div {
+      width: 50%;
+      position: relative;
+      .title-wrap {
+        margin-top: 5%;
+        .title-label {
+          font-size: $font-large-h2;
+        }  
+      }    
+      .blog-wrap {
+        min-height: 40%;
+        max-height: 50%;
+        overflow-y: hidden;
+        display: block;
+        position: absolute;
+        bottom: 25%;
+        left: -30%;
+        z-index: 5;
+        background-color: rgba($standard, 0.5);
+        align-content: center;
+        text-align: left;
+        .blog-title {
+          margin: 10px 0 0 0;
+          font-size: $font-med-h3;
+        }
+        .blog-body {}        
+      }
+      .read-more-btn {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        font-size: $font-large-btn;
+      }
+    }
+  }
+}
