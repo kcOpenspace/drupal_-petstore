@@ -2,6 +2,7 @@
 nav.navigation {
 
   height: 100%;
+  max-width: 900px;
   margin: auto 20px auto 0;
 
   ul {
@@ -18,23 +19,25 @@ nav.navigation {
       padding: 10px 20px;
       list-style-type: none;
       list-style-image: none;
+      color: $standard;
       font-size: $font-menu-small;
       font-weight: 400;
-      border-right: 1px solid $primary-color;
+      border-right: 1px solid $standard;
       
-      &:first-child {
-        margin-left: 0;
-      }
       &:last-child {
         border: none;
       }
     }
 
     & li a {
-      color: $primary-color;
+      color: $standard;
 
       &:hover {
         text-decoration: none;
+        color: $secondary-color;
+      }
+
+      &:active {
         color: $secondary-color;
       }
     }
