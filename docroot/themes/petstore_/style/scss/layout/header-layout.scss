@@ -1,0 +1,24 @@
+
+.header-layout { 
+
+  max-width: 100%;
+  margin-bottom: 20px;
+
+  .region--header { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: $regionSpacing;
+    border-bottom: 3px solid $secondary-color;
+  } 
+
+  
+  // .region--menus { 
+    //   margin-bottom: $regionSpacing;
+    // } 
+    
+  
+  
+}
+
