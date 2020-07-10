@@ -4,17 +4,22 @@
   max-width: 1200px;
   max-height: 80vh;
   flex-wrap: wrap;
+  margin: 0 auto;
   text-align: center;
+
   .left-div {
     & img {
       width: 100%;
       max-width: 768px;
     }
   }
+
   .right-div {
     height: 100%;
     line-height: 1.9em;
+
     .title-wrap {
+      padding-left: 10px;
       .title-label {
         margin: 10px 0 0;
         color: $primary-color;
@@ -25,10 +30,12 @@
         font-size: $font-small-p;
       }
     }
+
     //Latest BLog Post Contents. Small screen mobile view not display up to 375px wide.
     .blog-wrap {
       display: none;
     }
+
     .read-more-btn {
       max-width: 200px;
       display: block;
@@ -40,7 +47,7 @@
       color: $standard;
       text-decoration: none;
       text-align: center;
-      font-size: large;
+      font-size: $font-small-btn;
 
       &:hover {
         cursor: pointer;
@@ -68,12 +75,15 @@
     .right-div {
       width: 50%;
       position: relative;
+
       .title-wrap {
         margin-top: 5%;
+
         .title-label {
           font-size: $font-large-h2;
         }  
-      }    
+      }   
+
       .blog-wrap {
         min-height: 40%;
         max-height: 50%;
@@ -83,20 +93,22 @@
         bottom: 25%;
         left: -30%;
         z-index: 5;
+        padding: 0 10px;
         background-color: rgba($standard, 0.5);
         align-content: center;
         text-align: left;
+
         .blog-title {
           margin: 10px 0 0 0;
           font-size: $font-med-h3;
         }
-        .blog-body {}        
+
       }
+
       .read-more-btn {
         position: absolute;
         bottom: 5%;
         left: 10%;
-        font-size: $font-large-btn;
       }
     }
   }
