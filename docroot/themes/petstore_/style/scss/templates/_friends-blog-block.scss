@@ -1,9 +1,12 @@
-$font-large: 2.4em;
+$font-large-h2: 2.6em;
 $font-med-h3: 1.5em;
+
+$font-large-btn: 1.5em;
 
 .blog-wrapper {
   width: 100%;
-  height: 100%;
+  max-width: 1200px;
+  max-height: 80vh;
   flex-wrap: wrap;
   text-align: center;
   .left-div {
@@ -13,7 +16,7 @@ $font-med-h3: 1.5em;
     }
   }
   .right-div {
-    min-height: 100%;
+    height: 100%;
     line-height: 1.9em;
     .title-wrap {
       .title-label {
@@ -52,7 +55,7 @@ $font-med-h3: 1.5em;
 
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 700px) {
   .blog-wrapper {
     height: 50vh;
     max-height: 800px;
@@ -70,11 +73,13 @@ $font-med-h3: 1.5em;
       width: 50%;
       position: relative;
       .title-wrap {
+        margin-top: 5%;
         .title-label {
-          font-size: $font-large;
+          font-size: $font-large-h2;
         }  
       }    
       .blog-wrap {
+        min-height: 40%;
         max-height: 50%;
         overflow-y: hidden;
         display: block;
@@ -83,6 +88,8 @@ $font-med-h3: 1.5em;
         left: -30%;
         z-index: 5;
         background-color: rgba($standard, 0.5);
+        align-content: center;
+        text-align: left;
         .blog-title {
           margin: 10px 0 0 0;
           font-size: $font-med-h3;
@@ -91,8 +98,9 @@ $font-med-h3: 1.5em;
       }
       .read-more-btn {
         position: absolute;
-        left: auto;
         bottom: 5%;
+        left: 10%;
+        font-size: $font-large-btn;
       }
     }
   }
