@@ -1,5 +1,9 @@
+
+$font-small-h2: 1.6em;
 $font-large-h2: 2.6em;
 $font-med-h3: 1.5em;
+
+$font-small-p: 1.1em;
 
 $font-large-btn: 1.5em;
 
@@ -22,11 +26,11 @@ $font-large-btn: 1.5em;
       .title-label {
         margin: 10px 0 0;
         color: $primary-color;
-        font-size: 1.6em;
+        font-size: $font-small-h2;
       }
       & p {
         color: $secondary-color;
-        font-size: 1.1em;
+        font-size: $font-small-p;
       }
     }
     //Latest BLog Post Contents. Small screen mobile view not display up to 375px wide.
