@@ -19,6 +19,7 @@
         "drupal/admin_toolbar": "^2.3",
         "drupal/core": "8.9.0",
         "drupal/devel": "^4.0",
+        "drupal/ds": "^3.7",
         "drupal/feeds_ex": "^1.0@alpha",
         "drupal/omega": "5.0-alpha7",
         "drupal/page_manager": "^4.0",
