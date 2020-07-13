@@ -1,0 +1,10 @@
+/**
+*Overrides for css with no class
+*/
+
+//Override front page content region titles
+.contextual-region>h2 {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $desktopWide;
+}

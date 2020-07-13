@@ -1,18 +1,11 @@
-// // // Default Variable Import
-// @import "omega-style-vars", "omega-default-style-vars";
-
-// // /* SAMPLE SCSS FILE CONTENTS */
-// @import "layout/primary-layout.scss"; 
-// @import "elements/html-elements.scss";
-
-// @import "elements/main-menus.scss","elements/site-branding.scss","elements/pagers.scss";
-
-// @import "grids/omegags";
 @import "settings/layout", "settings/colours", "settings/fonts";
 
 @import "elements/site-branding.scss", "elements/main-menus.scss";
 
 @import "layout/header-layout.scss", "layout/footer-layout.scss";
 
+@import "components/article-teaser";
 
-@import "templates/friends-blog-block", "templates/friends-blog-list"
+@import "overrides/overrides.scss";
+
+@import "templates/friends-blog-block", "templates/friends-blog-list", "templates/article-page";
