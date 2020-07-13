@@ -1,0 +1,18 @@
+
+.header-layout { 
+
+  max-width: 100vw;
+  margin-bottom: 20px;
+  background-color: $primary-color2;
+  
+  .region--header { 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+
+}
+

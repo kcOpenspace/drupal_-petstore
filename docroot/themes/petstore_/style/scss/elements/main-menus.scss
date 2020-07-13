@@ -1,75 +1,53 @@
-// @media all and (min-width: $mobilePortrait) and (max-width: $below_mobileLandscape)
-// @media all and (min-width: $mobileLandscape) and (max-width: $below_tablet)
-// @media all and (min-width: $tablet) and (max-width: $below_desktop)
-// @media all and (min-width: $desktop) and (max-width: $below_desktopWide)
-// @media all and (min-width: $desktopWide)
-
-@import "../omega-style-vars", "../omega-default-style-vars";
 
 nav.navigation {
+
+  height: 100%;
+  max-width: 900px;
+  margin: auto 20px auto 0;
+
   ul {
+    height: 100%;
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     
     li {
-      margin: 3px 5px;
-      padding: 0;
+      margin: 0;
+      padding: 10px 20px;
       list-style-type: none;
       list-style-image: none;
-      display: inline-block;
+      color: $standard;
+      font-size: $font-menu-small;
+      font-weight: 400;
+      border-right: 1px solid $standard;
       
-      &:first-child {
-        margin-left: 0;
-      }
       &:last-child {
-        margin-right: 0;
+        border: none;
+      }
+    }
+
+    & li a {
+      color: $standard;
+
+      &:hover {
+        text-decoration: none;
+        color: $secondary-color;
+      }
+
+      &:active {
+        color: $secondary-color;
       }
     }
   }
-}
 
-
-
-
-@media all and (min-width: $desktop) {
-  /*
-nav.navigation {
-    
-    ul, ul.links {
-      margin: 0;
-      margin-bottom: 0.5em;
-      padding: 0;
-      
+  @media screen and (min-width: $tablet) {
+    ul {
       li {
-        margin: 0 5px;
-        padding: 0;
-        list-style-type: none;
-        display: inline-block;
-
-        a {
-          display: block;
-          padding: 5px 10px;
-          background: $menuitemBg;
-          color: $menuitemColor;
-          text-decoration: none;
-          
-          @include omegaTransition(all, 0.25s, ease-in-out);
-          
-          &:hover {
-            opacity: 0.85;
-          }
-          
-        }
-
-        &:first-child {
-          margin-left: 0;
-        }
-  
-        &:last-child {
-          margin-right: 0;
-        }  
+        font-size: $font-menu;
       }
     }
   }
-*/
 }
