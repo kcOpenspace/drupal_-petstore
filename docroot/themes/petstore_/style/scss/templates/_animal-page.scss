@@ -56,6 +56,20 @@
   
 }
 
+//IE 11 Fix for Object-fit
+@media screen and (-ms-high-contrast:none), (-ms-high-contrast:active){
+  
+  .animal-image img {
+    width: auto;
+    height: 100%;
+    max-width: 450px;
+    max-height: 450px;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,0);
+  }
+}
+
 @media screen and (min-width: $mobile-standard){    
   .ds-2col-stacked {
     .group-left {
@@ -78,6 +92,7 @@
             max-height: 450px;
             object-fit: cover;
           }
+
         }
       }
     }
