@@ -1,0 +1,69 @@
+/**
+* Animal List and grid views styles
+*/
+
+.view-display-id-front_pet_block {
+  width: 90%;
+  max-width: $desktopWide;
+  margin: 0 auto;
+
+}
+
+.pet-grid-view-col {
+  padding: 10px;
+}
+
+.animal-teaser-title {
+  font-size: 1em;
+}
+
+.read-more-btn {
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  background-image: linear-gradient($secondary-color, $primary-color);
+  margin: 0 auto 10px;
+  padding: 5px 10px;
+  //Btn Text styles
+  color: $standard;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient($primary-color,$secondary-color);
+  }
+
+  @media screen and (min-width: $mobile-standard) {
+    font-size: 1em;
+  }
+}
+
+//List page styling with filter
+.view-display-id-our_pet_page {
+  width: 90%;
+  max-width: $desktop;
+  margin: 20px auto;
+
+  .view-filters {
+
+    .form--inline {
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: row;
+    }
+
+    label {
+      display: none;
+    }
+
+    select {
+      width: 300px;
+    }
+  }
+
+}
+
+

@@ -3,13 +3,13 @@
 */
 .article-block-view {
   width: 90%;
-  max-width: $desktopWide;
+  max-width: $desktop;
   margin: 0 auto;
 }
 
 .article-list-view-row {
   width: 90%;
-  max-width: $desktopWide;
+  max-width: $desktop;
   margin: 0 auto;
 }
 
@@ -18,11 +18,11 @@
   flex-wrap: wrap;
   flex-direction: column;
 
-  .group-left {
+  &.group-left {
     width: 100%;
     height: 100%;
-    .article-image-wrap {
-      .article-image {
+    &.article-image-wrap {
+      &.article-image {
         & a {
           margin: auto 0;
           & img {

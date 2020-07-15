@@ -1,11 +1,13 @@
 @import "settings/layout", "settings/colours", "settings/fonts";
 
-@import "elements/site-branding.scss", "elements/main-menus.scss";
+@import "elements/site-branding.scss", "elements/main-menus.scss", "elements/html-elements.scss";
 
 @import "layout/header-layout.scss", "layout/footer-layout.scss";
 
-@import "components/article-teaser";
+@import "components/article-teaser", "components/animal-teaser";
 
 @import "overrides/overrides.scss";
 
 @import "templates/friends-blog-block", "templates/friends-blog-list", "templates/article-page";
+
+@import "templates/animal-page";
