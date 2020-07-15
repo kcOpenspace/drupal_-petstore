@@ -1,0 +1,115 @@
+/**
+* Contact page styling
+*/
+
+.block-content--type-contactinfoblock {
+  width: 90%;
+  max-width: $desktop;
+  margin: 30px auto;
+
+  .contact-address-wrap {
+    margin-bottom: 10px;
+
+    .field-label-above {
+      padding-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .contact-phone-wrap, .contact-fax-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    
+    @media screen and (min-width: $mobile-standard) {
+      flex-direction: row;
+    }
+  }
+  
+  .contact-phone-wrap, .contact-fax-wrap {
+    .field-label-inline {
+      padding-right: 5px;
+      font-weight: bold;
+    }
+  }
+}
+
+.block-region-bottom>div {
+  & h2 {
+    width: 90%;
+    max-width: $desktop;
+    margin: 0 auto;  
+  }
+}
+
+.webform-elements {
+  width: 90%;
+  max-width: $desktop;
+  margin: 0 auto;
+
+  .webform-email-wrap{
+    
+    .webform-email-label {
+      margin: 5px 0;
+      font-size: $form-label-m;
+      font-weight: bold;
+    }
+    
+    & input {
+      width: 100%;
+      border: none;
+      padding: 6.72px 9.6px;
+      box-shadow: 2px 2px 5px 0 rgba($black-color,0.5);
+      font-size: $form-text-m;
+    }
+  }
+
+  .webform-phone-wrap {
+    margin: 5px 0;
+
+    .webform-phone-label {
+      margin: 5px 0;
+      font-size: $form-label-m;
+      font-weight: bold;
+    }
+    
+    .webform-phone {
+      width: 100%;
+      border: none;
+      padding: 6.72px 9.6px;
+      box-shadow: 2px 2px 5px 0 rgba($black-color,0.5);
+      font-size: $form-text-m;
+      
+    }
+  }
+
+  .webform-actions {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+
+    .submit-btn {
+      width: 100%;
+      max-width: 250px;
+      display: block;
+      background-image: linear-gradient($secondary-color, $primary-color);
+      margin: 0 auto 10px;
+      padding: 10px 10px;
+      border: none;
+      border-radius: 16px;
+      //Btn Text styles
+      color: $standard;
+      text-decoration: none;
+      text-align: center;
+      font-size: $font-small-btn;
+      font-weight: 400;
+    
+      &:hover {
+        cursor: pointer;
+        background-image: linear-gradient($primary-color,$secondary-color);
+      }    
+    
+    }
+  }
+
+}
