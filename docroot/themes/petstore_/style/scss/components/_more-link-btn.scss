@@ -1,0 +1,25 @@
+
+
+.more-link {
+  & a {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    background-image: linear-gradient($secondary-color, $primary-color);
+    margin: 0 auto 10px;
+    padding: 10px 10px;
+    border-radius: 16px;
+    //Btn Text styles
+    color: $standard;
+    text-decoration: none;
+    text-align: center;
+    font-size: $font-small-btn;
+    font-weight: 400;
+  
+    &:hover {
+      cursor: pointer;
+      background-image: linear-gradient($primary-color,$secondary-color);
+    }
+
+  }
+}
