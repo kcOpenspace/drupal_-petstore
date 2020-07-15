@@ -1,0 +1,29 @@
+/**
+* About page styles
+*/
+
+.about-image-wrap {
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto 20px;
+
+  .about-image {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $mobile-standard){
+    width: 90%
+  }
+}
+
+.about-page-title {
+  width: 90%;
+  max-width: $desktop;
+  margin: 0 auto;
+}
+
+.about-body-wrap {
+  width: 90%;
+  max-width: $desktop;
+  margin: 0 auto;
+}

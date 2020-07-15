@@ -8,5 +8,35 @@
   width: 90%;
   max-width: $desktopWide;
   text-align: center;
+}
 
+//overrides for front page Pet teaser 
+.views-element-container {
+  &>h2 {
+    margin-bottom: 10px;
+    font-size: $font-med-h2; 
+  }
+}
+
+//Override back ground color for Blog teaser section
+.views-element-container:nth-child(2n) {
+  background-color: $primary-color2;
+  color: $standard;
+
+  & h2 {
+    color: $standard;
+  }
+
+  @media screen and (min-width: $mobile-standard) {
+    padding: 40px 0;
+
+    &>h2 {
+      font-size: $font-med-h2;
+    }
+  }
+}
+
+.views-element-container {
+  margin: auto auto;
+  padding: 20px 0
 }
