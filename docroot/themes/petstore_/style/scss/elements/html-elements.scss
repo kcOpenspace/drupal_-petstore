@@ -25,12 +25,15 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 
 a {
   text-decoration: none;
-  color: rgba($primaryColor1, 1);
+  color: rgba($secondary-color, 1);
   @include omegaTransition(opacity, 0.25s, ease-in-out);
   &:hover {
     text-decoration: underline;
     
-    color: rgba($primaryColor1, 0.85);
+    color: rgba($primary-color, 0.85);
+  }
+  &:active {
+    color: rgba($primary-color, 0.85);
   }
 }
 
@@ -74,8 +77,9 @@ h1 {
   
 }
 
-h2 {
+h1, h2 {
   font-size: $font-small-h2;
+  color: $primary-color;
 }
 
 h3 {
