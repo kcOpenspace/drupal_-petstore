@@ -63,6 +63,7 @@
 @media screen and (min-width: $tablet) {
   .blog-wrapper {
     height: 50vh;
+    min-height: 450px;
     max-height: 500px;
     display: flex;
     flex-direction: row;
@@ -71,8 +72,8 @@
       text-align: right;
       & img {
         width: 100%;
-        max-height: 450px;
         height: 100%;
+        max-height: 450px;
         object-fit: cover;
       }
     }
