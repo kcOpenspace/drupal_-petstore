@@ -17,10 +17,38 @@
 
   font-size: $font-small-p;
   
-  .title-name {
-    color: $primary-color;
-    font-size: $font-med-h2;
+  & .group-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .title-name {
+      color: $primary-color;
+      font-size: $font-med-h2;
+    }
+
+    .vud-widget {
+      height: 100%;
+      margin: auto 0;
+      display: flex;
+      flex-direction: row;
+
+      @media screen and (min-width: $mobile-standard) {
+        padding-right: 20px;
+      }
+
+      .up-score, .down-score{
+        height: 100%;
+        padding: 0 10px;
+      }
+
+      .vote-current-score {
+        display: none;
+      }
+    }
   }
+
 
   & .group-left {
     width: 100%;
