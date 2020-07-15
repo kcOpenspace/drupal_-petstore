@@ -1,0 +1,45 @@
+/**
+* Styling for Welcome Text block
+*/
+
+.welcome-block-wrap {
+  height: 30vh;
+  padding: 20px 0;
+  background-color: $primary-color2;
+
+  .welcome-text {
+    width: 90%;
+    max-width: $desktop;
+    margin: auto;
+    text-align: center;
+
+    & h2 {
+      color: $standard;
+    }
+
+    & p {
+      color: $standard;
+      font-size: $font-small-p;
+      line-height: 1.2em;
+    }
+
+  }
+
+  @media screen and (min-width: $mobile-standard){
+    
+    max-height: 250px;
+    
+    .welcome-text {
+      width: 70%;
+
+      & h2 {
+        font-size: 2em;
+      }
+
+      & p {
+        font-size: $font-med-p;
+      }
+    }
+  }
+}
+

@@ -1,7 +1,9 @@
-<div>
-  <h3>Latest post from my friends pet blog</h3>  
+<div class="blog-content-wrap">
+  <h3 class="latest-post-label">Latest post from my friends pet blog</h3>  
   {% for post in body %}
-  <p>{{ post.title }}</p>
-  <p>{{ post.body }}</p>
+  <div class="blog-post-wrap">
+    <p class="blog-post-title">{{ post.title }}</p>
+    <p class="blog-post-body">{{ post.body }}</p>
+  </div>
   {% endfor %}
 </div>
