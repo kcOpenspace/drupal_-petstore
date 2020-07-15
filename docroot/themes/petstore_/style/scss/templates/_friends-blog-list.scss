@@ -1,0 +1,32 @@
+
+/**
+*Friends Blgo list page
+*/
+
+.blog-content-wrap {
+  width: 90%;
+  max-width: $desktop;
+  margin: 0 auto;
+  text-align: center;
+
+  .latest-post-label {
+    padding-bottom: 10px;
+    font-size: $font-med-h3;
+    color: $primary-color;
+  }
+
+  .blog-post-wrap {
+    border-bottom: 1px solid black;
+
+    .blog-post-title {
+      font-size: $font-small2-p;
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
+
+  @media screen and (min-width: $mobile-standard) {
+    text-align: left;
+  }
+
+}
