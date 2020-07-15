@@ -8,5 +8,35 @@
   width: 90%;
   max-width: $desktopWide;
   text-align: center;
+}
 
+//overrides for front page Pet teaser 
+div[data-block-id="8d115e26-19d4-4cff-9568-5a1fd581793b"] {
+  &>h2 {
+    margin-bottom: 10px;
+    font-size: $font-med-h2; 
+  }
+}
+
+//Override back ground color for Blog teaser section
+div[data-block-id="b77eae10-4186-41e2-8d34-b1b981fb8d09"] {
+  background-color: $primary-color2;
+  color: $standard;
+
+  & h2 {
+    color: $standard;
+  }
+
+  @media screen and (min-width: $mobile-standard) {
+    padding: 40px 0;
+
+    &>h2 {
+      font-size: $font-med-h2;
+    }
+  }
+}
+
+.views-element-container {
+  margin: auto auto;
+  padding: 20px 0
 }
