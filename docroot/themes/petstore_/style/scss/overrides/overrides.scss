@@ -11,7 +11,7 @@
 }
 
 //overrides for front page Pet teaser 
-div[data-block-id="8d115e26-19d4-4cff-9568-5a1fd581793b"] {
+.views-element-container {
   &>h2 {
     margin-bottom: 10px;
     font-size: $font-med-h2; 
@@ -19,7 +19,7 @@ div[data-block-id="8d115e26-19d4-4cff-9568-5a1fd581793b"] {
 }
 
 //Override back ground color for Blog teaser section
-div[data-block-id="b77eae10-4186-41e2-8d34-b1b981fb8d09"] {
+.views-element-container:nth-child(2n) {
   background-color: $primary-color2;
   color: $standard;
 
