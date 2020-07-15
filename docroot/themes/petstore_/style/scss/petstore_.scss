@@ -4,10 +4,11 @@
 
 @import "layout/header-layout.scss", "layout/footer-layout.scss";
 
-@import "components/article-teaser", "components/animal-teaser";
+@import "components/hero-block", "components/welcome-block","components/article-teaser", "components/animal-teaser",
+"components/more-link-btn";
 
 @import "overrides/overrides.scss";
 
 @import "templates/friends-blog-block", "templates/friends-blog-list", "templates/article-page";
 
-@import "templates/animal-page";
+@import "templates/animal-page", "templates/friends-blog-list", "templates/contact-page";
