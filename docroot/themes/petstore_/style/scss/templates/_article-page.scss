@@ -22,13 +22,30 @@ article {
   margin: 0 auto;
 
   .article-page-image-wrap {
-    justify-self: center;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    
+    .article-page-image {
+      width: 100%;
+      text-align: center;
+      & a { 
+        width: 100%;
+        margin: 0 auto;
+
+        &img {
+          height: 100%;
+          min-height: 250px;
+          object-fit: cover;
+        }
+      }
+    }
   }
+
   .article-page-posted-wrap {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    font-weight: bold;
 
     .article-page-posted {
       padding: 0 10px;

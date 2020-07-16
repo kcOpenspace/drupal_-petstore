@@ -7,15 +7,59 @@
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
-
+  
+  
   & div {
-
+    
     position: relative;
+    
+    //CTA Hero text block
+    .cta-text-wrap {
+      width: 100%;
+      position: absolute;
+      bottom: 35%;
+      text-align: center;
+
+      .cta-text {
+        color: $neon-color;
+        font-size: $font-med-p;
+        font-weight: 400;
+      }
+    }
+
+    //styling to adjust to adjust cta block with the hero wrap
+    @media screen and (min-width: $mobile-standard) {
+      .cta-text-wrap {
+        bottom: 40%;
+      }
+
+      .hero-body-wrap {
+        padding-bottom: 40px;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      .cta-text-wrap {
+        bottom: 35%;
+
+        .cta-text {
+          font-size: $font-large-p;
+        }
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      .cta-text-wrap {
+        bottom: 38%;
+      }
+    }
+
+
 
     .hero-body-wrap {
       width: 100%;
       position: absolute;
-      top: 45%;
+      top: 40%;
       transform: translateY(-50%);
       margin: 0 auto;
       background-color: rgba(255,255,255,0.2);
@@ -65,8 +109,9 @@
         }
       }
 
+      //Adjust to cater for cta block
       @media screen and (min-width: $tablet) {
-        bottom: 28%;
+        bottom: 24%;
 
         .hero-btn a {
           font-size: $font-large-btn;

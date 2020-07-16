@@ -1,5 +1,36 @@
 @import "../omega-style-vars", "../omega-default-style-vars";
 
-ul.pager {
-  
+ul.pager__items {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  li.is-active {
+    display: none;
+  }
+
+  li.pager__item--next, .pager__item--previous {
+    width: 100%;
+    margin: 0 auto;
+
+    & a {
+      max-width: 250px;
+      display: block;
+      background-image: linear-gradient($secondary-color, $primary-color);
+      margin: 0 auto;
+      padding: 10px 10px;
+      border-radius: 16px;
+      //Btn Text styles
+      color: $standard;
+      text-decoration: none;
+      text-align: center;
+      font-size: $font-small-btn;
+      font-weight: 400;
+    
+      &:hover {
+        cursor: pointer;
+        background-image: linear-gradient($primary-color,$secondary-color);
+      }
+    }
+  }
 }

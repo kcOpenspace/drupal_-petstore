@@ -18,7 +18,6 @@
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^2.3",
         "drupal/core": "8.9.0",
-        "drupal/devel": "^4.0",
         "drupal/ds": "^3.7",
         "drupal/feeds_ex": "^1.0@alpha",
         "drupal/omega": "5.0-alpha7",
@@ -27,6 +26,9 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/restui": "1.18",
+        "drupal/simple_gmap": "^3.0",
+        "drupal/vote_up_down": "^1.0-alpha4",
+        "drupal/votingapi": "^3.0@beta",
         "drupal/webform": "5.x",
         "drush/drush": "^10.3",
         "guzzlehttp/guzzle": "^6.3"
