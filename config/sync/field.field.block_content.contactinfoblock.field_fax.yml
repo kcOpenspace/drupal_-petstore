@@ -1,0 +1,21 @@
+uuid: 5507788b-7567-418f-97c4-8fae80c49fd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contactinfoblock
+    - field.storage.block_content.field_fax
+id: block_content.contactinfoblock.field_fax
+field_name: field_fax
+entity_type: block_content
+bundle: contactinfoblock
+label: Fax
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '5555 1223'
+default_value_callback: ''
+settings: {  }
+field_type: string

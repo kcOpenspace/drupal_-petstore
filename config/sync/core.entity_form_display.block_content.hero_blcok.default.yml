@@ -1,0 +1,65 @@
+uuid: 008fe6fb-f4c8-4d07-ab67-3fcf5ff55975
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_blcok
+    - field.field.block_content.hero_blcok.body
+    - field.field.block_content.hero_blcok.field_cta_hero_text
+    - field.field.block_content.hero_blcok.field_hero_image
+    - field.field.block_content.hero_blcok.field_linkbtn
+    - image.style.feature_image
+  module:
+    - image
+    - link
+    - text
+id: block_content.hero_blcok.default
+targetEntityType: block_content
+bundle: hero_blcok
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 1
+      placeholder: ''
+      summary_rows: 1
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_cta_hero_text:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hero_image:
+    weight: 1
+    settings:
+      preview_image_style: feature_image
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_linkbtn:
+    weight: 4
+    settings:
+      placeholder_url: /pets
+      placeholder_title: 'Internal address to pages '
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

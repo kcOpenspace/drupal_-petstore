@@ -1,4 +1,4 @@
-uuid: ed88cc6d-aa7d-4d4f-abd2-86648e53899f
+uuid: b5fdb417-ff9e-47cb-8870-324e8d90c5c5
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,11 @@ dependencies:
     - page_manager.page.homepage
     - views.view.article_view
     - views.view.gridview
+  content:
+    - 'block_content:basic:ca8a781d-4542-48cb-a784-43daf772aedf'
+    - 'block_content:hero_blcok:9fa6b50d-304f-479b-b308-45fb1f03123f'
   module:
+    - block_content
     - panels
     - pet_store_friends
     - views
@@ -15,44 +19,77 @@ label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    88351d42-807f-45e6-b062-44e0d75495ea:
+    b77eae10-4186-41e2-8d34-b1b981fb8d09:
+      id: 'views_block:article_view-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: ds_content
+      weight: 1
+      uuid: b77eae10-4186-41e2-8d34-b1b981fb8d09
+      context_mapping: {  }
+    96381ed8-fc4c-4bce-8b78-bb2c64d8a100:
+      id: pet_store_friends_block
+      label: friends_blog
+      provider: pet_store_friends
+      label_display: '0'
+      region: ds_content
+      weight: 2
+      uuid: 96381ed8-fc4c-4bce-8b78-bb2c64d8a100
+      context_mapping: {  }
+    8d115e26-19d4-4cff-9568-5a1fd581793b:
       id: 'views_block:gridview-front_pet_block'
       label: ''
       provider: views
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: content
+      region: ds_content
       weight: 0
-      uuid: 88351d42-807f-45e6-b062-44e0d75495ea
+      uuid: 8d115e26-19d4-4cff-9568-5a1fd581793b
       context_mapping: {  }
-    c8f455c8-43d2-4cec-a5f1-6b48c43b604a:
-      id: 'views_block:article_view-block_1'
-      label: 'Latest Pet News'
-      provider: views
-      label_display: visible
-      views_label: 'Latest Pet News'
-      items_per_page: '3'
-      region: content
-      weight: 1
+    730d69f1-10e0-4844-ad17-77b23ad258fc:
+      id: 'block_content:ca8a781d-4542-48cb-a784-43daf772aedf'
+      label: 'Welcome Text Block'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: ds_content
+      weight: -1
+      uuid: 730d69f1-10e0-4844-ad17-77b23ad258fc
       context_mapping: {  }
-      uuid: c8f455c8-43d2-4cec-a5f1-6b48c43b604a
-    3d699b57-3cd4-4b95-829d-0f7e2de68ae6:
-      id: pet_store_friends_block
-      label: 'Latest post from my friends pet blog'
-      provider: pet_store_friends
-      label_display: visible
-      region: content
-      weight: 0
-      uuid: 3d699b57-3cd4-4b95-829d-0f7e2de68ae6
+    277cf4d9-bf32-4001-b631-1ba10b58a8da:
+      id: 'block_content:9fa6b50d-304f-479b-b308-45fb1f03123f'
+      label: 'Hero Block'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: ds_content
+      weight: -2
+      uuid: 277cf4d9-bf32-4001-b631-1ba10b58a8da
       context_mapping: {  }
   id: panels_variant
-  uuid: 408a3e54-a210-4199-b76d-d407929278c5
+  uuid: 1d9778d2-e248-4db1-9688-152021130435
   label: null
   weight: 0
-  layout: layout_onecol
+  layout: ds_1col_wrapper
   layout_settings:
     label: ''
+    wrappers:
+      ds_content: div
+    outer_wrapper: div
+    attributes: front-page-id
+    link_attribute: ''
+    link_custom: ''
+    classes:
+      layout_class: {  }
+      ds_content: {  }
   page_title: ''
   storage_type: page_manager
   storage_id: homepage-panels_variant-0

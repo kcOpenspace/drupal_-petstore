@@ -1,0 +1,8 @@
+uuid: 630260f9-232f-4118-afd3-741248cbf928
+langcode: en
+status: true
+dependencies: {  }
+id: contactinfoblock
+label: ContactInfoblock
+revision: 0
+description: 'Contains address phone number and email and any contact information. Changes for all children of this block can be made here'

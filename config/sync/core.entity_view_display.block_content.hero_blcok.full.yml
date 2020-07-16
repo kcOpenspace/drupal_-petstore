@@ -1,0 +1,197 @@
+uuid: 55151c97-56c2-44df-958d-434dfc5017f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_blcok
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.hero_blcok.body
+    - field.field.block_content.hero_blcok.field_cta_hero_text
+    - field.field.block_content.hero_blcok.field_hero_image
+    - field.field.block_content.hero_blcok.field_linkbtn
+    - image.style.hero_image
+  module:
+    - ds
+    - image
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col_wrapper
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_hero_image
+        - field_cta_hero_text
+        - body
+        - field_linkbtn
+id: block_content.hero_blcok.full
+targetEntityType: block_content
+bundle: hero_blcok
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 2
+    settings:
+      trim_length: 400
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: hero-body-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: hero-body
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    region: ds_content
+  field_cta_hero_text:
+    type: entity_reference_entity_view
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: cta-text-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: cta-text
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: hero_image
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: div
+            lbw-cl: hero-image-label
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: hero-image-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: hero-image
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: image
+    region: ds_content
+  field_linkbtn:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: hero-btn-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: hero-btn
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: link
+    region: ds_content
+hidden: {  }

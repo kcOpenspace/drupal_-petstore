@@ -20,11 +20,12 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: true
-  path: ''
+  use_default: false
+  path: themes/petstore_/logo.png
 favicon:
-  use_default: true
-  path: ''
+  use_default: false
+  path: themes/petstore_/favicon.ico
+  mimetype: image/vnd.microsoft.icon
 omega_toggle_intro: 1
 enable_backups: 0
 force_subtheme_creation: 0

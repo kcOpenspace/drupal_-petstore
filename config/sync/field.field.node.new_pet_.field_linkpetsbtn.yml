@@ -1,0 +1,32 @@
+uuid: c519032c-f3cd-4747-940b-faeccdc6c7ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_btn
+    - field.storage.node.field_linkpetsbtn
+    - node.type.new_pet_
+  content:
+    - 'block_content:link_btn:c17f0b0c-025c-4e62-b4df-f79b30daca29'
+id: node.new_pet_.field_linkpetsbtn
+field_name: field_linkpetsbtn
+entity_type: node
+bundle: new_pet_
+label: linkpetbtn
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: c17f0b0c-025c-4e62-b4df-f79b30daca29
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      link_btn: link_btn
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

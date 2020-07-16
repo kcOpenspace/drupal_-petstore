@@ -1,0 +1,28 @@
+uuid: d44a578a-e5a2-43e6-b57b-b5341b9d6c29
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_blcok
+    - field.storage.block_content.field_linkbtn
+  module:
+    - link
+id: block_content.hero_blcok.field_linkbtn
+field_name: field_linkbtn
+entity_type: block_content
+bundle: hero_blcok
+label: LinkBtn
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/pets'
+    title: 'Browse Animals'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

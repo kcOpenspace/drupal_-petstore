@@ -1,0 +1,28 @@
+uuid: d36dd32b-5a52-4472-aba1-d0612b1c7bab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linkbtn
+    - node.type.article
+  module:
+    - link
+id: node.article.field_linkbtn
+field_name: field_linkbtn
+entity_type: node
+bundle: article
+label: linkbtn
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/article-list-page'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

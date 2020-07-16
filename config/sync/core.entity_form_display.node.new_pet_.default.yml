@@ -6,10 +6,12 @@ dependencies:
     - field.field.node.new_pet_.body
     - field.field.node.new_pet_.field_animal_type
     - field.field.node.new_pet_.field_image
+    - field.field.node.new_pet_.field_linkpetsbtn
     - field.field.node.new_pet_.field_paragraphs
     - field.field.node.new_pet_.field_pet_care_instructions
     - field.field.node.new_pet_.field_pet_isgreat
     - field.field.node.new_pet_.field_pet_name_for_search
+    - field.field.node.new_pet_.field_rating
     - field.field.node.new_pet_.field_teaser
     - image.style.thumbnail
     - node.type.new_pet_
@@ -142,4 +144,6 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_linkpetsbtn: true
+  field_rating: true

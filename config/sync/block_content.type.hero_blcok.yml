@@ -1,0 +1,8 @@
+uuid: c798f7b1-251f-4a75-9eee-7b6acb2c0c76
+langcode: en
+status: true
+dependencies: {  }
+id: hero_blcok
+label: 'Hero Block'
+revision: 0
+description: 'Used for creating the Hero image block with cta'

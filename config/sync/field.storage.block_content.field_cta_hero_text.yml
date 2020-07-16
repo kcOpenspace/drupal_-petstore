@@ -1,0 +1,19 @@
+uuid: 550ebb92-0845-4d90-8e0b-fa574745f8f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_cta_hero_text
+field_name: field_cta_hero_text
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -6,18 +6,22 @@ dependencies:
     - field.field.node.new_pet_.body
     - field.field.node.new_pet_.field_animal_type
     - field.field.node.new_pet_.field_image
+    - field.field.node.new_pet_.field_linkpetsbtn
     - field.field.node.new_pet_.field_paragraphs
     - field.field.node.new_pet_.field_pet_care_instructions
     - field.field.node.new_pet_.field_pet_isgreat
     - field.field.node.new_pet_.field_pet_name_for_search
+    - field.field.node.new_pet_.field_rating
     - field.field.node.new_pet_.field_teaser
-    - image.style.large
+    - image.style.pet_thumbnail_480
     - node.type.new_pet_
   module:
+    - ds
     - entity_reference_revisions
     - image
     - text
     - user
+    - vud
 id: node.new_pet_.default
 targetEntityType: node
 bundle: new_pet_
@@ -42,10 +46,25 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: large
+      image_style: pet_thumbnail_480
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: image
+    region: content
+  field_linkpetsbtn:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_paragraphs:
     type: entity_reference_revisions_entity_view
@@ -69,6 +88,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_rating:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: vote_up_down_formatter_type
     region: content
   links:
     weight: 6

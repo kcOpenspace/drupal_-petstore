@@ -1,0 +1,23 @@
+uuid: f529f20e-4813-44a9-92d8-c7c76fd3ec19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.new_pet_
+  module:
+    - vud
+id: node.new_pet_.field_rating
+field_name: field_rating
+entity_type: node
+bundle: new_pet_
+label: rating
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: vote_up_down_field

@@ -1,0 +1,15 @@
+uuid: ac99dc72-b928-4d10-bd0e-2aae6af91382
+langcode: en
+status: true
+dependencies: {  }
+name: pet_thumbnail_480
+label: 'pet thumbnail 480'
+effects:
+  b0f28f76-bdcc-4c52-95e0-e64e87307cf9:
+    uuid: b0f28f76-bdcc-4c52-95e0-e64e87307cf9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 450
+      height: 450
+      anchor: center-center

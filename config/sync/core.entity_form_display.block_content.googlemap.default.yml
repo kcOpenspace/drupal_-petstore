@@ -1,0 +1,29 @@
+uuid: af593680-6bb9-4893-9b94-51fd23ddfcf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.googlemap
+    - field.field.block_content.googlemap.field_location_address
+id: block_content.googlemap.default
+targetEntityType: block_content
+bundle: googlemap
+mode: default
+content:
+  field_location_address:
+    weight: 1
+    settings:
+      size: 255
+      placeholder: 'Address or Coordinates'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

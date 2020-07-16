@@ -1,0 +1,25 @@
+uuid: 5e5dda0c-72e6-4d4c-b6ae-77fdc3bc4f47
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:77bcda57-168e-4c75-83a7-f8e9f869433f'
+  module:
+    - block_content
+  theme:
+    - petstore_
+id: aboutcompany
+theme: petstore_
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:77bcda57-168e-4c75-83a7-f8e9f869433f'
+settings:
+  id: 'block_content:77bcda57-168e-4c75-83a7-f8e9f869433f'
+  label: 'About Company '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

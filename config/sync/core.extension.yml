@@ -18,7 +18,7 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  devel: 0
+  ds_switch_view_mode: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -58,6 +58,7 @@ module:
   search: 0
   serialization: 0
   shortcut: 0
+  simple_gmap: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -66,11 +67,14 @@ module:
   tour: 0
   user: 0
   views_ui: 0
+  votingapi: 0
+  vud: 0
   webform: 0
   webform_templates: 0
   webform_ui: 0
-  webprofiler: 0
+  ds: 1
   pathauto: 1
+  ds_extras: 2
   views: 10
   paragraphs: 11
   standard: 1000
