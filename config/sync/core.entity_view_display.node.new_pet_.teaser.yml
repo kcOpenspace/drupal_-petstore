@@ -7,50 +7,124 @@ dependencies:
     - field.field.node.new_pet_.body
     - field.field.node.new_pet_.field_animal_type
     - field.field.node.new_pet_.field_image
+    - field.field.node.new_pet_.field_linkpetsbtn
     - field.field.node.new_pet_.field_paragraphs
     - field.field.node.new_pet_.field_pet_care_instructions
     - field.field.node.new_pet_.field_pet_isgreat
     - field.field.node.new_pet_.field_pet_name_for_search
+    - field.field.node.new_pet_.field_rating
     - field.field.node.new_pet_.field_teaser
-    - image.style.petthumbnail
+    - image.style.pet_thumbnail_480
     - node.type.new_pet_
   module:
+    - ds
     - image
-    - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col_wrapper
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_image
+        - node_title
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': read-more-btn
+          wrapper: ''
+          class: read-more-btn-wrap
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: animal-teaser-title
+          link: false
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 id: node.new_pet_.teaser
 targetEntityType: node
 bundle: new_pet_
 mode: teaser
 content:
-  field_animal_type:
-    type: entity_reference_label
-    weight: 2
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_image:
     type: image
     weight: 0
-    region: content
+    region: ds_content
     label: hidden
     settings:
-      image_style: petthumbnail
-      image_link: ''
-    third_party_settings: {  }
-  field_teaser:
-    type: text_default
-    weight: 1
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
+      image_style: pet_thumbnail_480
+      image_link: content
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: animal-teaser-image-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: animal-teaser-image
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
 hidden:
   body: true
+  field_animal_type: true
+  field_linkpetsbtn: true
   field_paragraphs: true
   field_pet_care_instructions: true
   field_pet_isgreat: true
   field_pet_name_for_search: true
+  field_rating: true
+  field_teaser: true
   links: true

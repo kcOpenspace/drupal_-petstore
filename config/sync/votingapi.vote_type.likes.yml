@@ -1,0 +1,8 @@
+uuid: 33cbe490-cf51-47c6-acee-f4be59c5551b
+langcode: en
+status: true
+dependencies: {  }
+id: likes
+label: likes
+value_type: 'Number of likes'
+description: ''

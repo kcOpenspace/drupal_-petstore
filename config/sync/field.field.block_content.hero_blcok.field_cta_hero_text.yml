@@ -1,0 +1,32 @@
+uuid: f9c62cd1-20a8-4aa6-8bfc-9989afb180b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_hero_block
+    - block_content.type.hero_blcok
+    - field.storage.block_content.field_cta_hero_text
+  content:
+    - 'block_content:cta_hero_block:af3d3ef7-74c4-42f5-9f93-bb7f1044f12a'
+id: block_content.hero_blcok.field_cta_hero_text
+field_name: field_cta_hero_text
+entity_type: block_content
+bundle: hero_blcok
+label: 'cta hero text'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: af3d3ef7-74c4-42f5-9f93-bb7f1044f12a
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      cta_hero_block: cta_hero_block
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

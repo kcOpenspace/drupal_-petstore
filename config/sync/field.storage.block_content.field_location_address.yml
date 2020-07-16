@@ -1,0 +1,21 @@
+uuid: cbc432f8-e91c-4141-88ad-1124b94f89c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_location_address
+field_name: field_location_address
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

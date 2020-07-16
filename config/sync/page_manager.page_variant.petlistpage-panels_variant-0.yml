@@ -1,0 +1,59 @@
+uuid: 4644967c-165e-4be0-9165-ea1af9b1c855
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.petlistpage
+    - views.view.gridview
+  module:
+    - panels
+    - views
+id: petlistpage-panels_variant-0
+label: PetlistPanels
+variant: panels_variant
+variant_settings:
+  blocks:
+    789459f5-115b-44cd-9f22-41c815ba22f3:
+      id: 'views_block:gridview-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 0
+      uuid: 789459f5-115b-44cd-9f22-41c815ba22f3
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 077ed675-1a92-4a45-9107-01a1336b9170
+  label: null
+  weight: 0
+  layout: ds_3col_stacked_equal_width
+  layout_settings:
+    label: ''
+    wrappers:
+      header: div
+      left: div
+      middle: div
+      right: div
+      footer: div
+    outer_wrapper: div
+    attributes: ''
+    link_attribute: ''
+    link_custom: ''
+    classes:
+      layout_class: {  }
+      header: {  }
+      left: {  }
+      middle: {  }
+      right: {  }
+      footer: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: petlistpage-panels_variant-0
+  builder: ipe
+page: petlistpage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

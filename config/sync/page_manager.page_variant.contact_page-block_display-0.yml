@@ -1,0 +1,64 @@
+uuid: d6be6398-d8ac-41ce-8ba9-65de786a8f45
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.contact_page
+    - webform.webform.email_us
+  content:
+    - 'block_content:contactinfoblock:8a6c66d2-0e20-4f9d-af7c-93810d2d8488'
+    - 'block_content:googlemap:79554849-64ca-437a-8394-fda2ae721f58'
+  module:
+    - block_content
+    - webform
+id: contact_page-block_display-0
+label: 'Block page'
+variant: block_display
+variant_settings:
+  blocks:
+    87220799-66f5-40a4-893d-200fa50fa93e:
+      id: 'block_content:8a6c66d2-0e20-4f9d-af7c-93810d2d8488'
+      label: 'Contact Info Block'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: top
+      weight: -9
+      uuid: 87220799-66f5-40a4-893d-200fa50fa93e
+      context_mapping: {  }
+    f8c9d2c4-4e88-4879-b9d1-54c105dd8196:
+      id: webform_block
+      label: 'Email Us'
+      provider: webform
+      label_display: visible
+      webform_id: email_us
+      default_data: ''
+      redirect: false
+      region: bottom
+      weight: 0
+      uuid: f8c9d2c4-4e88-4879-b9d1-54c105dd8196
+      context_mapping: {  }
+    174f566d-bec9-44b7-a435-138ff5f6c51e:
+      id: 'block_content:79554849-64ca-437a-8394-fda2ae721f58'
+      label: 'Location Map'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: top
+      weight: -10
+      uuid: 174f566d-bec9-44b7-a435-138ff5f6c51e
+      context_mapping: {  }
+  id: block_display
+  uuid: d102d2c3-ff80-4223-b77b-3dae8d979e47
+  label: null
+  weight: 0
+  page_title: 'Contact Us'
+page: contact_page
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

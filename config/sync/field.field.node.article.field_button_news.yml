@@ -1,0 +1,32 @@
+uuid: a7e37544-0102-4259-9a2a-94bf9f1282af
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_btn
+    - field.storage.node.field_button_news
+    - node.type.article
+  content:
+    - 'block_content:link_btn:100e7c4a-aed9-448a-8c6a-0329f08ff7fb'
+id: node.article.field_button_news
+field_name: field_button_news
+entity_type: node
+bundle: article
+label: button-news
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 100e7c4a-aed9-448a-8c6a-0329f08ff7fb
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      link_btn: link_btn
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

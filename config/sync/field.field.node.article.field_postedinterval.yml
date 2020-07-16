@@ -1,0 +1,24 @@
+uuid: f898d2b5-b3a9-4077-8f49-d86fe05b69ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_postedinterval
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_postedinterval
+field_name: field_postedinterval
+entity_type: node
+bundle: article
+label: Posted
+description: 'Select the date this was posted. And it will show how many days ago it was last posted.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

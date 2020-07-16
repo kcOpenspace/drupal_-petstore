@@ -1,0 +1,33 @@
+uuid: 20750423-6c21-4eb0-8935-d1f1c7666273
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_btn
+    - field.field.block_content.link_btn.body
+    - field.field.block_content.link_btn.field_link
+  module:
+    - link
+id: block_content.link_btn.default
+targetEntityType: block_content
+bundle: link_btn
+mode: default
+content:
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: 'url ...'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true

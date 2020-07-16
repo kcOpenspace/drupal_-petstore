@@ -5,14 +5,19 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_button_news
     - field.field.node.article.field_feature_image
     - field.field.node.article.field_image
+    - field.field.node.article.field_linkbtn
+    - field.field.node.article.field_linktext
+    - field.field.node.article.field_postedinterval
     - field.field.node.article.field_tags
     - field.field.node.article.field_teaser
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
+    - datetime
     - image
     - path
     - text
@@ -25,7 +30,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -35,13 +40,13 @@ content:
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -55,15 +60,21 @@ content:
     region: content
   field_image:
     type: image_image
-    weight: 5
+    weight: 6
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_postedinterval:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 4
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
@@ -72,7 +83,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_teaser:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -81,7 +92,7 @@ content:
     region: content
   path:
     type: path
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -89,21 +100,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 10
     region: content
     third_party_settings: {  }
   title:
@@ -116,7 +127,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -124,4 +135,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_button_news: true
+  field_linkbtn: true
+  field_linktext: true

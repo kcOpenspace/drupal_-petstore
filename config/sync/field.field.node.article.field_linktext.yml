@@ -1,0 +1,28 @@
+uuid: b32e9048-cfc2-4878-9aa4-ac8daa2602f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linktext
+    - node.type.article
+  module:
+    - link
+id: node.article.field_linktext
+field_name: field_linktext
+entity_type: node
+bundle: article
+label: linktext
+description: 'Required  link url for the see more news button'
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/article-list-page'
+    title: 'More News'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

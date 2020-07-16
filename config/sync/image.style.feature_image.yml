@@ -13,3 +13,11 @@ effects:
       width: 900
       height: 400
       anchor: center-center
+  85a99086-4920-4dc1-aba1-423505e8f545:
+    uuid: 85a99086-4920-4dc1-aba1-423505e8f545
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1200
+      height: 400
+      anchor: center-center

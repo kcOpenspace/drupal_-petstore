@@ -1,0 +1,8 @@
+uuid: 9058a2f0-4bc2-4ccd-af75-1c081847037d
+langcode: en
+status: true
+dependencies: {  }
+id: posted
+label: Posted
+locked: false
+pattern: d

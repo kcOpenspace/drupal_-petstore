@@ -1,0 +1,49 @@
+uuid: 931f0419-3495-47f4-8a85-b00b245fc8bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contactinfoblock
+    - field.field.block_content.contactinfoblock.body
+    - field.field.block_content.contactinfoblock.field_address
+    - field.field.block_content.contactinfoblock.field_fax
+    - field.field.block_content.contactinfoblock.field_phone_no_
+id: block_content.contactinfoblock.default
+targetEntityType: block_content
+bundle: contactinfoblock
+mode: default
+content:
+  field_address:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_fax:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone_no_:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true

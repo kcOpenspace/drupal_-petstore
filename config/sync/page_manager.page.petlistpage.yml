@@ -1,0 +1,12 @@
+uuid: 897fbf02-789f-4c3e-85b1-cdf964d964b6
+langcode: en
+status: true
+dependencies: {  }
+id: petlistpage
+label: petlistpage
+description: ''
+use_admin_theme: false
+path: /animal-list
+access_logic: and
+access_conditions: {  }
+parameters: {  }

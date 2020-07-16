@@ -1,0 +1,51 @@
+uuid: 38dc431d-5e95-4204-888a-17c980488808
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_hero_block
+    - field.field.block_content.cta_hero_block.body
+  module:
+    - ds
+    - text
+id: block_content.cta_hero_block.default
+targetEntityType: block_content
+bundle: cta_hero_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: cta-hero-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: cta-hero
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: 74a5431c-3cda-45e8-96f3-f0741e155197
+langcode: en
+status: true
+dependencies: {  }
+id: cta_hero_block
+label: 'CTA Hero block'
+revision: 0
+description: 'Hero image text'

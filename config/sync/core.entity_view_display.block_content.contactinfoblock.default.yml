@@ -1,0 +1,149 @@
+uuid: 99808c77-7ffa-45ff-8dcb-187ef8bd6b53
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contactinfoblock
+    - field.field.block_content.contactinfoblock.body
+    - field.field.block_content.contactinfoblock.field_address
+    - field.field.block_content.contactinfoblock.field_fax
+    - field.field.block_content.contactinfoblock.field_phone_no_
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col_wrapper
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_address
+        - field_phone_no_
+        - field_fax
+id: block_content.contactinfoblock.default
+targetEntityType: block_content
+bundle: contactinfoblock
+mode: default
+content:
+  field_address:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: contact-address-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: contact-address
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: basic_string
+    region: ds_content
+  field_fax:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: contact-fax-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: contact-fax
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: string
+    region: ds_content
+  field_phone_no_:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: contact-phone-wrap
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: contact-phone
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: string
+    region: ds_content
+hidden:
+  body: true

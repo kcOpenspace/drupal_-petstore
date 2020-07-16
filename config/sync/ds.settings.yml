@@ -1,0 +1,27 @@
+disabled: false
+field_template: true
+ft-default: minimal
+ft-show-colon: false
+classes:
+  region:
+    - article-title-region
+    - article-content-region
+    - animal-title-region
+    - animal-content-region
+    - animal-footer-region
+    - animal-header-region
+    - ''
+  field:
+    - article-title
+    - article-body-wrap
+    - article-body
+    - article-img-wrap
+    - article-img
+    - ''
+    - animal-title
+    - animal-content
+    - animal-type
+    - animal-more-btn
+use_field_names: true
+_core:
+  default_config_hash: xfB0qOeoAomOThclNNokdKTrVwXLcXz13SU3-4a5-FY

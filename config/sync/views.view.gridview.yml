@@ -58,13 +58,13 @@ display:
         type: grid
         options:
           uses_fields: false
-          columns: 4
+          columns: 3
           automatic_width: true
           alignment: horizontal
           col_class_default: true
-          col_class_custom: ''
+          col_class_custom: pet-grid-view-col
           row_class_default: true
-          row_class_custom: ''
+          row_class_custom: pet-grid-view-row
       row:
         type: 'entity:node'
         options:
@@ -283,22 +283,9 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Our Pets'
+      title: 'Browse Animals'
       header: {  }
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<div class=\"btn-div\"><btn class=\"loadmore-btn\"><a href=\"/pets?field_pet_name_for_search_value=&amp;field_animal_type_target_id=All&amp;page=1\" title=\"Go to next page\" rel=\"next\">LOAD MORE</a></btn></div>\r\n\r\n<style>\r\n.btn-div{text-align:center;}\r\n.loadmore-btn{padding: 10px 20px;background-color:#FA6246;border-radius:10px;}\r\na{color:#905044;text-decoration:none}\r\n</style>"
-            format: full_html
-          plugin_id: text
+      footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
@@ -310,6 +297,52 @@ display:
       use_more: false
       use_more_always: false
       use_more_text: 'See More'
+      link_url: /pets
+      link_display: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: petlistBlock
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      relationships:
+        field_animal_type:
+          id: field_animal_type
+          table: node__field_animal_type
+          field: field_animal_type
+          relationship: none
+          group_type: group
+          admin_label: 'field_animal_type: Taxonomy term'
+          required: true
+          plugin_id: standard
+      defaults:
+        relationships: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        pager: false
+        title: true
+      use_more: true
+      use_more_always: false
+      use_more_text: 'See More'
+      pager:
+        type: some
+        options:
+          items_per_page: 9
+          offset: 0
+      block_description: petlistblock
     cache_metadata:
       max-age: -1
       contexts:
@@ -323,7 +356,7 @@ display:
   front_pet_block:
     display_plugin: block
     id: front_pet_block
-    display_title: 'front pet block'
+    display_title: 'front animal pet block'
     position: 2
     display_options:
       display_extenders: {  }
@@ -338,6 +371,11 @@ display:
         filters: false
         filter_groups: false
         relationships: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
       block_description: 'pet block'
       filters:
         status:
@@ -451,6 +489,11 @@ display:
           admin_label: 'field_animal_type: Taxonomy term'
           required: true
           plugin_id: standard
+      use_more: true
+      use_more_always: true
+      use_more_text: 'See More'
+      link_display: custom_url
+      link_url: /pets
     cache_metadata:
       max-age: -1
       contexts:
@@ -473,7 +516,7 @@ display:
         description: 'List of our pets'
         expanded: false
         parent: ''
-        weight: -49
+        weight: -48
         context: '0'
         menu_name: main
       display_description: ''
@@ -489,12 +532,39 @@ display:
           plugin_id: standard
       defaults:
         relationships: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        pager: false
+        title: true
+      use_more: false
+      use_more_always: false
+      use_more_text: 'See More'
+      pager:
+        type: mini
+        options:
+          items_per_page: 9
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹‹ Prev'
+            next: 'More Pets ››'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
